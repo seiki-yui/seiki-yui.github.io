@@ -1,0 +1,55 @@
+/* https://fastly.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/atom-one-light.min.css */
+/* https://fastly.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/atom-one-dark.min.css */
+/* @import url('https://fonts.cdnfonts.com/css/jetbrains-mono-2'); */
+/* @import url("/static/css/jetbrains-mono.css"); */
+
+
+@import url("/static/css/prism-style.css");
+
+
+html, body { scroll-behavior:smooth; }
+
+img[src^="/static/img/emoji/smile/"] {
+    height: 100% !important;
+}
+
+div.copy > input, pre, code {
+    font-family: "JetBrains Mono", Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif !important;
+    
+}
+
+aside.l_left > div.leftbar-container {
+    background: var(--block);
+    background-image: none;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+}
+.widget-wrapper.toc {
+    background: inherit
+}
+@media (prefers-color-scheme: dark) {
+    .search-wrapper >.search-form {
+        background: var(--alpha20); 
+    }
+    :root {
+        --card: #2e3337;
+        /* var(--旧card) + var(--block) */
+        /* #373d43 + #26292c */
+    }
+}
+@media (prefers-color-scheme: light) {
+    .search-wrapper >.search-form {
+        background: var(--alpha50); 
+    }
+}
+@media screen and (prefers-color-scheme: dark) {
+    :root {
+        --site-bg: #1c1e21;
+        /* --darkreader-bg--site-bg: unset; */
+    }
+  }
+      
+  /* .post-list .post-card .post-cover img {
+        object-fit: unset; 
+        aspect-ratio: unset;
+  } */

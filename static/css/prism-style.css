@@ -1,0 +1,96 @@
+@import url("/static/css/prism-atom-one-dark.css") (prefers-color-scheme: dark);
+@import url("/static/css/prism-atom-one-light.css") (prefers-color-scheme: light);
+
+/* `` */
+p>code:not([class]), li>code:not([class]) {
+    border: 1px solid var(--block-border);
+}
+
+/* box child:codeblock */
+div.note[child="codeblock"] > div.body > pre.line-numbers {
+    border: none;
+    margin: 0;
+}
+
+/* box child:codeblock color:xxx */
+div.note[child=codeblock][color] > div.body > pre.line-numbers {
+    background: transparent;
+}
+
+/* codeblock lang:kotlin */
+details.folding[child="codeblock"] > div.body > pre.line-numbers {
+    border: none;
+    border-radius: 0 0 12px 12px;
+}
+
+/* folding child:codeblock + ``` */
+details.folding[child="codeblock"][color] > div.body > pre.line-numbers,
+details.folding[child="codeblock"][color] > div.body > pre.line-numbers > code {
+    background: transparent;
+    margin: 0;
+    border-radius: 12px;
+}
+
+pre[class*="language-"] {
+    border: 1px solid var(--block-border);
+    border-radius: 12px;
+}
+
+@media (prefers-color-scheme: dark) {
+    code[class*="language-"], pre[class*="language-"] {
+        background-color: #23272E;
+    }
+    .token.annotation {
+        color: hsl(286, 60%, 67%);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .token.annotation {
+        color: hsl(301, 63%, 40%);
+    }
+}
+
+
+
+.line-numbers-rows>span:before {
+    content: counter(linenumber);
+    color: #5C6370;
+    display: block;
+    padding-right: 0.8em;
+    text-align: right;
+}
+
+pre.line-numbers {
+    position: relative;
+    padding-left: 3.8em;
+    counter-reset: linenumber;
+}
+
+pre.line-numbers>code {
+    position: relative;
+}
+
+.line-numbers .line-numbers-rows {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    font-size: 100%;
+    left: -3.8em;
+    width: 3em;
+    /* works for line-numbers below 1000 lines */
+    letter-spacing: -1px;
+    border-right: 0;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+.line-numbers-rows>span {
+    pointer-events: none;
+    display: block;
+    counter-increment: linenumber;
+}

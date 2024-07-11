@@ -68,8 +68,16 @@ aside.l_left > div.leftbar-container {
     /* --text-p2: #640674; */ 
 }
 
-.template-ruby-hidden {
-    display: inline-block;
-    width: 0;
-    font-size: 0;
+rt {
+    font-size: calc(var(--fsp) * 0.75);
+    position: relative;
+    bottom: 1.5px;
+}
+
+span[lang] {
+    font-family: initial;
+}
+
+.tag-plugin.image .image-meta {
+    margin-bottom: -1rem;
 }

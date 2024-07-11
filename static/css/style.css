@@ -53,3 +53,23 @@ aside.l_left > div.leftbar-container {
         object-fit: unset; 
         aspect-ratio: unset;
   } */
+
+.md-text .tag-plugin.mark {
+    padding: 1px 1px;
+}
+
+.colorful[color='pink'] {
+    /* --theme: #9c27b0; */
+    /* --theme-border: #deb3e6;  */
+     --theme-block: #ffe0e9; 
+    /* --theme-codeblock: #f7ecf9; */
+    --text: hwb(343 7% 75% / 1);
+    /* --text-p1: #47174f; */
+    /* --text-p2: #640674; */ 
+}
+
+.template-ruby-hidden {
+    display: inline-block;
+    width: 0;
+    font-size: 0;
+}

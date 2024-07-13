@@ -7,16 +7,17 @@
 @import url("/static/css/prism-style.css");
 
 
-html, body { scroll-behavior:smooth; }
+html, body { 
+    scroll-behavior:smooth; 
+}
 
 img[src^="/static/img/emoji/smile/"] {
     height: 100% !important;
 }
 
 div.copy > input, pre, code {
-    font-family: "JetBrains Mono", Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif !important;
-    
-}
+    font-family: "Jetbrains Mono", Menlo, Monaco, Consolas, "Noto Sans Display", "Noto Sans SC", system-ui, "Courier New", monospace, sans-serif;
+} 
 
 aside.l_left > div.leftbar-container {
     background: var(--block);
@@ -70,14 +71,25 @@ aside.l_left > div.leftbar-container {
 
 rt {
     font-size: calc(var(--fsp) * 0.75);
-    position: relative;
-    bottom: 1.5px;
+    /* position: relative;
+    bottom: 1.5px; */
 }
 
-span[lang] {
-    font-family: initial;
+jp,.jp {
+    font-family: "Noto Sans JP";
+}
+
+jb,.jb {
+    font-family: "Jetbrains Mono";
 }
 
 .tag-plugin.image .image-meta {
     margin-bottom: -1rem;
+}
+
+.child-box-pre .note {
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    overflow: auto !important;
 }

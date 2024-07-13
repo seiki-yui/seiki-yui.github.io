@@ -1,6 +1,13 @@
 @import url("/static/css/prism-atom-one-dark.css") (prefers-color-scheme: dark);
 @import url("/static/css/prism-atom-one-light.css") (prefers-color-scheme: light);
 
+
+code[class*="language-"],
+pre[class*="language-"] {
+  font-family: "Jetbrains Mono", Menlo, Monaco, Consolas, "Fira Code", "Fira Mono", Menlo, Consolas, "DejaVu Sans Mono", "Courier New", monospace, sans-serif;
+}
+
+
 /* `` */
 p>code:not([class]), li>code:not([class]) {
     border: 1px solid var(--block-border);

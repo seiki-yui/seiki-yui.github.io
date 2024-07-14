@@ -93,3 +93,10 @@ jb,.jb {
     word-break: normal;
     overflow: auto !important;
 }
+
+.grid-pre .grid {
+    overflow: auto;
+}
+.grid-pre .grid .cell {
+    width: 186.66px;
+}

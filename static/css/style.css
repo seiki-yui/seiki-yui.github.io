@@ -43,12 +43,13 @@ aside.l_left > div.leftbar-container {
         background: var(--alpha50); 
     }
 }
-@media screen and (prefers-color-scheme: dark) {
+@media screen and (prefers-color-scheme: dark) and (max-width: 667px) {
     :root {
-        --site-bg: #1c1e21;
-        /* --darkreader-bg--site-bg: unset; */
+        --site-bg: #1c1e21 !important;
     }
-  }
+}
+
+
       
   /* .post-list .post-card .post-cover img {
         object-fit: unset; 
@@ -99,4 +100,10 @@ jb,.jb {
 }
 .grid-pre .grid .cell {
     width: 186.66px;
+}
+
+
+.md-text emp {
+    text-decoration: none;
+    border-bottom: 2px dotted #ff5724;
 }

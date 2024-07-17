@@ -76,13 +76,19 @@ rt {
     bottom: 1.5px; */
 }
 
-jp,.jp {
+jp, .jp {
     font-family: "Noto Sans JP";
 }
 
-jb,.jb {
+jb, .jb, jb rt, .jb rt {
     font-family: "Jetbrains Mono";
 }
+
+rbh, .rbh, rbh ruby, .rbh ruby {
+    line-height: 3;
+}
+
+
 
 .tag-plugin.image .image-meta {
     margin-bottom: -1rem;
@@ -106,4 +112,10 @@ jb,.jb {
 .md-text emp {
     text-decoration: none;
     border-bottom: 2px dotted #ff5724;
+}
+
+.md-text blockquote p code, .md-text ul p code, .md-text ol p code, .md-text blockquote ul code, .md-text ul ul code, .md-text ol ul code, .md-text blockquote ol code, .md-text ul ol code, .md-text ol ol code {
+    font-size: 85%;
+    background: var(--block);
+    padding: 0.2em;
 }

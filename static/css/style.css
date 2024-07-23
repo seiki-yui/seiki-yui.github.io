@@ -7,6 +7,12 @@
 @import url("/static/css/prism-style.css");
 
 
+.upyun_logo {
+    height: 20px;
+    position: relative;
+    top: 5px;
+}
+
 html, body { 
     scroll-behavior:smooth; 
 }

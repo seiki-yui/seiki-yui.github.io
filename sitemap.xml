@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://seiki.fun/article/previous-projects/</loc>
+    
+    <lastmod>2024-07-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiki.fun/article/test/</loc>
+    
+    <lastmod>2024-07-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seiki.fun/article/ghostpia-fictional-alphabets/</loc>
     
     <lastmod>2024-07-26</lastmod>
@@ -56,24 +74,6 @@
   </url>
   
   <url>
-    <loc>https://seiki.fun/article/previous-projects/</loc>
-    
-    <lastmod>2024-07-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seiki.fun/article/test/</loc>
-    
-    <lastmod>2024-07-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://seiki.fun/about/index.html</loc>
     
     <lastmod>2024-06-27</lastmod>
@@ -85,85 +85,85 @@
 
   <url>
     <loc>https://seiki.fun/</loc>
-    <lastmod>2024-07-26</lastmod>
+    <lastmod>2024-07-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://seiki.fun/tags/Foobar2000/</loc>
-    <lastmod>2024-07-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://seiki.fun/tags/ghostpia/</loc>
-    <lastmod>2024-07-26</lastmod>
+    <lastmod>2024-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://seiki.fun/tags/OST/</loc>
-    <lastmod>2024-07-26</lastmod>
+    <lastmod>2024-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://seiki.fun/tags/Art-Book/</loc>
-    <lastmod>2024-07-26</lastmod>
+    <lastmod>2024-07-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiki.fun/tags/Foobar2000/</loc>
+    <lastmod>2024-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://seiki.fun/tags/Lycoris-Recoil/</loc>
-    <lastmod>2024-07-26</lastmod>
+    <lastmod>2024-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://seiki.fun/tags/Puella-Magi-Madoka-Magica/</loc>
-    <lastmod>2024-07-26</lastmod>
+    <lastmod>2024-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://seiki.fun/tags/SPs/</loc>
-    <lastmod>2024-07-26</lastmod>
+    <lastmod>2024-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://seiki.fun/tags/%E8%87%AA%E8%B4%AD/</loc>
-    <lastmod>2024-07-26</lastmod>
+    <lastmod>2024-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://seiki.fun/tags/%E8%87%AA%E6%89%AB/</loc>
-    <lastmod>2024-07-26</lastmod>
+    <lastmod>2024-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://seiki.fun/tags/Paper-Lily/</loc>
-    <lastmod>2024-07-26</lastmod>
+    <lastmod>2024-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://seiki.fun/tags/Strange-Telephone/</loc>
-    <lastmod>2024-07-26</lastmod>
+    <lastmod>2024-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -172,35 +172,35 @@
   
   <url>
     <loc>https://seiki.fun/categories/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2024-07-26</lastmod>
+    <lastmod>2024-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://seiki.fun/categories/%E5%8F%91%E5%B8%83/</loc>
-    <lastmod>2024-07-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seiki.fun/categories/%E7%AC%94%E8%AE%B0/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2024-07-26</lastmod>
+    <lastmod>2024-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://seiki.fun/categories/%E7%AC%94%E8%AE%B0/%E8%80%83%E6%8D%AE/</loc>
-    <lastmod>2024-07-26</lastmod>
+    <lastmod>2024-07-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiki.fun/categories/%E7%AC%94%E8%AE%B0/%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2024-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://seiki.fun/categories/%E5%8F%91%E5%B8%83/%E8%B5%84%E6%BA%90/</loc>
-    <lastmod>2024-07-26</lastmod>
+    <lastmod>2024-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

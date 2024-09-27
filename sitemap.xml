@@ -106,27 +106,6 @@
   </url>
   
   <url>
-    <loc>https://seiki.fun/tags/ghostpia/</loc>
-    <lastmod>2024-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seiki.fun/tags/OST/</loc>
-    <lastmod>2024-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seiki.fun/tags/Art-Book/</loc>
-    <lastmod>2024-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://seiki.fun/tags/Puella-Magi-Madoka-Magica/</loc>
     <lastmod>2024-09-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -149,6 +128,27 @@
   
   <url>
     <loc>https://seiki.fun/tags/%E8%87%AA%E6%89%AB/</loc>
+    <lastmod>2024-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiki.fun/tags/ghostpia/</loc>
+    <lastmod>2024-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiki.fun/tags/OST/</loc>
+    <lastmod>2024-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiki.fun/tags/Art-Book/</loc>
     <lastmod>2024-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -185,14 +185,14 @@
   </url>
   
   <url>
-    <loc>https://seiki.fun/categories/%E7%AC%94%E8%AE%B0/%E6%8A%80%E6%9C%AF/</loc>
+    <loc>https://seiki.fun/categories/%E7%AC%94%E8%AE%B0/%E8%80%83%E6%8D%AE/</loc>
     <lastmod>2024-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://seiki.fun/categories/%E7%AC%94%E8%AE%B0/%E8%80%83%E6%8D%AE/</loc>
+    <loc>https://seiki.fun/categories/%E7%AC%94%E8%AE%B0/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2024-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

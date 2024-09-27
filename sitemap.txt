@@ -1,3 +1,4 @@
+https://seiki.fun/about/index.html
 https://seiki.fun/article/ghostpia-fictional-alphabets/
 https://seiki.fun/article/previous-projects/
 https://seiki.fun/article/test/
@@ -6,13 +7,12 @@ https://seiki.fun/article/strange-telephone-r/
 https://seiki.fun/article/lycoris-coconut-juice/
 https://seiki.fun/article/madoka-anime-new-type-sp-scans/
 https://seiki.fun/article/paper-lily-chapter-1-r/
-https://seiki.fun/about/index.html
 https://seiki.fun/
+https://seiki.fun/tags/Foobar2000/
+https://seiki.fun/tags/Lycoris-Recoil/
 https://seiki.fun/tags/ghostpia/
 https://seiki.fun/tags/OST/
 https://seiki.fun/tags/Art-Book/
-https://seiki.fun/tags/Foobar2000/
-https://seiki.fun/tags/Lycoris-Recoil/
 https://seiki.fun/tags/Puella-Magi-Madoka-Magica/
 https://seiki.fun/tags/SPs/
 https://seiki.fun/tags/%E8%87%AA%E8%B4%AD/
@@ -21,6 +21,6 @@ https://seiki.fun/tags/Paper-Lily/
 https://seiki.fun/tags/Strange-Telephone/
 https://seiki.fun/categories/%E7%AC%94%E8%AE%B0/
 https://seiki.fun/categories/%E5%8F%91%E5%B8%83/
-https://seiki.fun/categories/%E7%AC%94%E8%AE%B0/%E8%80%83%E6%8D%AE/
 https://seiki.fun/categories/%E7%AC%94%E8%AE%B0/%E6%8A%80%E6%9C%AF/
+https://seiki.fun/categories/%E7%AC%94%E8%AE%B0/%E8%80%83%E6%8D%AE/
 https://seiki.fun/categories/%E5%8F%91%E5%B8%83/%E8%B5%84%E6%BA%90/

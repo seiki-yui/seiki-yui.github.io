@@ -85,12 +85,21 @@ rbh, .rbh, rbh ruby, .rbh ruby {
     margin-bottom: -1rem;
 }
 
+.child-box-pre {
+    border: 1px solid var(--block-border);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
 .child-box-pre .note {
     white-space: pre;
     word-spacing: normal;
     word-break: normal;
     overflow: auto !important;
+    margin: 0;
+    border: unset !important;
 }
+
 
 .grid-pre .grid {
     overflow: auto;

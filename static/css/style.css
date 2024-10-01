@@ -6,6 +6,20 @@
 
 @import url("/static/css/prism-style.css");
 
+div.swiper-pagination {
+    bottom: -1.6em !important;
+}
+
+div.swiper {
+    overflow: visible
+}
+
+hr {
+    opacity: 0.4;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+
 a.title div.main {
     font-family: "Noto Sans SC";
 }

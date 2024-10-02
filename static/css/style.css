@@ -6,6 +6,10 @@
 
 @import url("/static/css/prism-style.css");
 
+iframe {
+    border-radius: 0 !important;
+}
+
 div.swiper-pagination {
     bottom: -1.6em !important;
 }
@@ -24,6 +28,7 @@ a.title div.main {
     font-family: "Noto Sans SC";
 }
 .upyun_logo {
+    width: 59px;
     height: 20px;
     position: relative;
     top: 5px;

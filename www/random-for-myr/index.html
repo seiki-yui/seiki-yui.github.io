@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css">
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/Sortable/1.15.2/Sortable.min.js"></script> -->
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <title>24-10-13 随机抽取 for myr</title>
+</head>
+<body class="pico">
+    <header class="container">
+        <h1>随机抽取 for myr</h1>
+    </header>
+    <main class="container">
+
+        <article>
+            <div class="grid">
+                <div>
+                    <h2>输入20行数据</h2>
+                    <textarea rows="20" id="input" autofocus>1-测试
+2-测试
+3-测试
+4-测试
+5-测试
+6-测试
+7-测试
+8-测试
+9-测试
+10-测试
+11-测试
+12-测试
+13-测试
+14-测试
+15-测试
+16-测试
+17-测试
+18-测试
+19-测试
+20-测试</textarea>
+                </div>
+                <div>
+                    <h2>抽取结果</h2>
+                    <textarea rows="4" id="output" readonly></textarea>
+                    <button type="button" id="button_yaru" onclick="button_onclick()">抽</button>　
+                </div>
+            </div>
+
+        </article>
+
+        <script>
+            function button_onclick() {
+                // 获取输入输出元素
+                ele_input = document.getElementById("input")
+                ele_output = document.getElementById("output")
+                
+                // 获取输入的文本
+                input = ele_input.value
+                // 按换行把文本分割为列表
+                list = Array.from(input.split("\n"))
+
+                // 抄的随机数
+                function random(min, max) {
+                    return Math.floor(Math.random() * (max - min + 1)) + min
+                }
+
+                ele_output.value = list[random(0, 14)] + "\n" + list[random(15, 19)]
+                
+            }
+        </script>
+
+        <style>
+            textarea {
+                font-size:75%;
+            }
+            #output {
+                white-space: pre;
+                word-spacing: normal;
+                word-break: normal;
+                overflow: auto !important;
+            }
+        </style>
+    
+</body>
+</html> 

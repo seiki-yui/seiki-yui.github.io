@@ -6,6 +6,10 @@
 
 @import url("/static/css/prism-style.css");
 
+li:not([class]) a:not([class]):hover, p:not([class]) a:not([class]):hover, table a:not([class]):hover {
+    background: linear-gradient(0deg, var(--theme-link), var(--theme-link)) no-repeat left 100% / 100% 1px;
+}
+
 iframe {
     border-radius: 0 !important;
 }
@@ -22,6 +26,10 @@ hr {
     opacity: 0.4;
     margin-top: 2.5em;
     margin-bottom: 2.5em;
+}
+
+body {
+    font-family: "Noto Sans Display";
 }
 
 a.title div.main {

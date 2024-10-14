@@ -2,9 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://seiki.fun/article/madoka-magica-doujin-albums/</loc>
+    <loc>https://seiki.fun/article/test/</loc>
     
-    <lastmod>2024-10-13</lastmod>
+    <lastmod>2024-10-14</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -13,7 +13,34 @@
   <url>
     <loc>https://seiki.fun/article/mygo-psychological-defense-mechanism/</loc>
     
-    <lastmod>2024-10-13</lastmod>
+    <lastmod>2024-10-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiki.fun/article/ghostpia-fictional-alphabets/</loc>
+    
+    <lastmod>2024-10-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiki.fun/article/madoka-anime-new-type-sp-scans/</loc>
+    
+    <lastmod>2024-10-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiki.fun/article/madoka-magica-doujin-albums/</loc>
+    
+    <lastmod>2024-10-14</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -29,34 +56,7 @@
   </url>
   
   <url>
-    <loc>https://seiki.fun/article/madoka-anime-new-type-sp-scans/</loc>
-    
-    <lastmod>2024-10-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://seiki.fun/article/lycoris-coconut-juice/</loc>
-    
-    <lastmod>2024-10-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seiki.fun/article/ghostpia-fictional-alphabets/</loc>
-    
-    <lastmod>2024-10-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seiki.fun/article/test/</loc>
     
     <lastmod>2024-10-13</lastmod>
     
@@ -92,7 +92,7 @@
 
   
   <url>
-    <loc>https://seiki.fun/tags/Lycoris-Recoil/</loc>
+    <loc>https://seiki.fun/tags/Foobar2000/</loc>
     <lastmod>2024-10-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -107,6 +107,13 @@
   
   <url>
     <loc>https://seiki.fun/tags/Art-Books/</loc>
+    <lastmod>2024-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiki.fun/tags/Lycoris-Recoil/</loc>
     <lastmod>2024-10-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -155,13 +162,6 @@
   </url>
   
   <url>
-    <loc>https://seiki.fun/tags/Foobar2000/</loc>
-    <lastmod>2024-10-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://seiki.fun/tags/BanG-Dream-It-s-MyGO/</loc>
     <lastmod>2024-10-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -171,13 +171,6 @@
 
   
   <url>
-    <loc>https://seiki.fun/categories/%E5%8F%91%E5%B8%83/</loc>
-    <lastmod>2024-10-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://seiki.fun/categories/%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2024-10-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -185,7 +178,14 @@
   </url>
   
   <url>
-    <loc>https://seiki.fun/categories/%E5%8F%91%E5%B8%83/%E8%B5%84%E6%BA%90/</loc>
+    <loc>https://seiki.fun/categories/%E5%8F%91%E5%B8%83/</loc>
+    <lastmod>2024-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiki.fun/categories/%E7%AC%94%E8%AE%B0/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2024-10-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -199,7 +199,7 @@
   </url>
   
   <url>
-    <loc>https://seiki.fun/categories/%E7%AC%94%E8%AE%B0/%E6%8A%80%E6%9C%AF/</loc>
+    <loc>https://seiki.fun/categories/%E5%8F%91%E5%B8%83/%E8%B5%84%E6%BA%90/</loc>
     <lastmod>2024-10-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

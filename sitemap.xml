@@ -92,6 +92,20 @@
 
   
   <url>
+    <loc>https://seiki.fun/tags/Lycoris-Recoil/</loc>
+    <lastmod>2024-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seiki.fun/tags/Foobar2000/</loc>
+    <lastmod>2024-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://seiki.fun/tags/ghostpia/</loc>
     <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -148,27 +162,20 @@
   </url>
   
   <url>
-    <loc>https://seiki.fun/tags/Lycoris-Recoil/</loc>
-    <lastmod>2024-10-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://seiki.fun/tags/BanG-Dream-It-s-MyGO/</loc>
     <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
+
+  
   <url>
-    <loc>https://seiki.fun/tags/Foobar2000/</loc>
+    <loc>https://seiki.fun/categories/%E5%8F%91%E5%B8%83/</loc>
     <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
-  
-
   
   <url>
     <loc>https://seiki.fun/categories/%E7%AC%94%E8%AE%B0/</loc>
@@ -178,7 +185,7 @@
   </url>
   
   <url>
-    <loc>https://seiki.fun/categories/%E5%8F%91%E5%B8%83/</loc>
+    <loc>https://seiki.fun/categories/%E7%AC%94%E8%AE%B0/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -192,13 +199,6 @@
   </url>
   
   <url>
-    <loc>https://seiki.fun/categories/%E8%BD%AC%E8%BD%BD/</loc>
-    <lastmod>2024-10-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://seiki.fun/categories/%E5%8F%91%E5%B8%83/%E8%B5%84%E6%BA%90/</loc>
     <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -206,7 +206,7 @@
   </url>
   
   <url>
-    <loc>https://seiki.fun/categories/%E7%AC%94%E8%AE%B0/%E6%8A%80%E6%9C%AF/</loc>
+    <loc>https://seiki.fun/categories/%E8%BD%AC%E8%BD%BD/</loc>
     <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

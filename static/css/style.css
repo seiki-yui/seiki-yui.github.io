@@ -5,7 +5,6 @@
 
 
 @import url("/static/css/prism-style.css");
-@import url("/static/css/aplayer-style.css");
 
 li:not([class]) a:not([class]):hover, p:not([class]) a:not([class]):hover, table a:not([class]):hover {
     background: linear-gradient(0deg, var(--theme-link), var(--theme-link)) no-repeat left 100% / 100% 1px;

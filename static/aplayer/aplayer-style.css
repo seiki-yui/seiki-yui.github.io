@@ -1,0 +1,28 @@
+@import url("/static/aplayer/APlayer.css");
+@import url("/static/aplayer/APlayer.seiki.css");
+
+.aplayer {
+  font-family: unset
+}
+
+.aplayer .aplayer-info {
+  padding: 11px 7px 0 10px;
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-time {
+  bottom: 6px;
+}
+
+.md-text .aplayer {
+  border-radius: 8px !important;
+}
+
+/* @media (max-width: 800px) {
+  .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+    left: -66px !important;
+  }
+  
+  .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+    left: 0 !important;
+  }
+} */

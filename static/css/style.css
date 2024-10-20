@@ -3,7 +3,7 @@
 /* @import url('https://fonts.cdnfonts.com/css/jetbrains-mono-2'); */
 /* @import url("/static/css/jetbrains-mono.css"); */
 
-
+@import url("/static/css/aplayer-style.css");
 @import url("/static/css/prism-style.css");
 
 li:not([class]) a:not([class]):hover, p:not([class]) a:not([class]):hover, table a:not([class]):hover {

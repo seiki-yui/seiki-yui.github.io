@@ -108,6 +108,13 @@
   </url>
   
   <url>
+    <loc>https://seiki.fun/tags/Foobar2000/</loc>
+    <lastmod>2024-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://seiki.fun/tags/Web/</loc>
     <lastmod>2024-10-20</lastmod>
     <changefreq>weekly</changefreq>
@@ -157,7 +164,7 @@
   </url>
   
   <url>
-    <loc>https://seiki.fun/tags/Foobar2000/</loc>
+    <loc>https://seiki.fun/tags/BanG-Dream-It-s-MyGO/</loc>
     <lastmod>2024-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -179,13 +186,6 @@
   
   <url>
     <loc>https://seiki.fun/tags/CDs/</loc>
-    <lastmod>2024-10-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seiki.fun/tags/BanG-Dream-It-s-MyGO/</loc>
     <lastmod>2024-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

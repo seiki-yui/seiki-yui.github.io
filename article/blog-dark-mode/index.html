@@ -17,20 +17,20 @@
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   <meta name="theme-color" content="#f9fafb">
   
-  <title>为 APlayer、Giscus 等插件适配深色模式 - Seiki</title>
+  <title>为博客 APlayer、Giscus 等插件适配深色模式 - Seiki</title>
 
   
-    <meta name="description" content="APlayer看别人的博客完全没有给 APlayer.js 播放器做暗黑模式适配的，于是自己写了一个。">
+    <meta name="description" content="看别人的博客完全没有给 APlayer.js 播放器做暗黑模式适配的，于是自己写了一个。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="为 APlayer、Giscus 等插件适配深色模式">
+<meta property="og:title" content="为博客 APlayer、Giscus 等插件适配深色模式">
 <meta property="og:url" content="https://seiki.fun/article/blog-dark-mode/index.html">
 <meta property="og:site_name" content="Seiki">
-<meta property="og:description" content="APlayer看别人的博客完全没有给 APlayer.js 播放器做暗黑模式适配的，于是自己写了一个。">
+<meta property="og:description" content="看别人的博客完全没有给 APlayer.js 播放器做暗黑模式适配的，于是自己写了一个。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://seiki.fun/article/blog-dark-mode/Snipaste_2024-10-20_14-29-17.png">
 <meta property="og:image" content="https://seiki.fun/article/blog-dark-mode/Snipaste_2024-10-20_14-29-57.png">
 <meta property="article:published_time" content="2024-10-19T15:25:21.000Z">
-<meta property="article:modified_time" content="2024-10-20T09:06:29.256Z">
+<meta property="article:modified_time" content="2024-11-03T06:21:23.130Z">
 <meta property="article:author" content="xiao_zheng">
 <meta property="article:tag" content="Web">
 <meta property="article:tag" content="CSS">
@@ -68,7 +68,7 @@
 <div class="widgets">
 
 
-<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/article/madoka-magica-doujin-albums/"><span class="title">魔法少女小圆 同人专辑合集</span></a><a class="item title" href="/article/ghostpia-fictional-alphabets/"><span class="title">解读 ghostpia 中的架空文字</span></a><a class="item title" href="/article/blog-dark-mode/"><span class="title">为 APlayer、Giscus 等插件适配深色模式</span></a><a class="item title" href="/article/test/"><span class="title">测试文章</span></a><a class="item title" href="/article/mygo-psychological-defense-mechanism/"><span class="title">心理防御机制视角的MyGO角色研究</span></a><a class="item title" href="/article/madoka-anime-new-type-sp-scans/"><span class="title">自扫分享 魔法少女小圆 动感新时代 2011SP增刊 + 2DVD 【待重扫】</span></a><a class="item title" href="/article/lycoris-coconut-juice/"><span class="title">平面设计 莉可莉丝 千束牌椰汁</span></a><a class="item title" href="/article/previous-projects/"><span class="title">曾经的项目</span></a><a class="item title" href="/article/foobar-use-vst/"><span class="title">Foobar2000 使用 VST 播放 Midi</span></a></div></widget>
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/article/blog-dark-mode/"><span class="title">为博客 APlayer、Giscus 等插件适配深色模式</span></a><a class="item title" href="/article/madoka-magica-doujin-albums/"><span class="title">魔法少女小圆 同人专辑合集</span></a><a class="item title" href="/article/ghostpia-fictional-alphabets/"><span class="title">解读 ghostpia 中的架空文字</span></a><a class="item title" href="/article/test/"><span class="title">测试文章</span></a><a class="item title" href="/article/mygo-psychological-defense-mechanism/"><span class="title">心理防御机制视角的MyGO角色研究</span></a><a class="item title" href="/article/madoka-anime-new-type-sp-scans/"><span class="title">自扫分享 魔法少女小圆 动感新时代 2011SP增刊 + 2DVD 【待重扫】</span></a><a class="item title" href="/article/lycoris-coconut-juice/"><span class="title">平面设计 莉可莉丝 千束牌椰汁</span></a><a class="item title" href="/article/previous-projects/"><span class="title">曾经的项目</span></a><a class="item title" href="/article/foobar-use-vst/"><span class="title">Foobar2000 使用 VST 播放 Midi</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
@@ -81,33 +81,38 @@
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
 <span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a> <span class="sep"></span> <a class="cap breadcrumb-link" href="/categories/%E7%AC%94%E8%AE%B0/%E6%8A%80%E6%9C%AF/">技术</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-10-19T15:25:21.000Z">2024-10-19</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-10-20T09:06:29.256Z">2024-10-20</time></span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-10-19T15:25:21.000Z">2024-10-19</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-11-03T06:21:23.130Z">2024-11-03</time></span></div></div></div>
     
     <div class="bottom only-title">
       
       <div class="text-area">
-        <h1 class="text title"><span>为 APlayer、Giscus 等插件适配深色模式</span></h1>
+        <h1 class="text title"><span>为博客 APlayer、Giscus 等插件适配深色模式</span></h1>
         
       </div>
     </div>
     
   </div>
-  </div><article class="md-text content"><h2 id="APlayer"><a href="#APlayer" class="headerlink" title="APlayer"></a>APlayer</h2><p>看别人的博客完全没有给 APlayer.js 播放器做暗黑模式适配的，于是自己写了一个。<span id="more"></span></p>
+  </div><article class="md-text content"><div style="display: none;">
+看别人的博客完全没有给 APlayer.js 播放器做暗黑模式适配的，于是自己写了一个。
+<span id="more"></span>
+</div>
 
-        <div id="aplayer-FaIXCtIk" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
+<h2 id="APlayer"><a href="#APlayer" class="headerlink" title="APlayer"></a>APlayer</h2><p>看别人的博客完全没有给 APlayer.js 播放器做暗黑模式适配的，于是自己写了一个。</p>
+
+        <div id="aplayer-MkHFVkbl" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
 			  <script>
 				  var options = {"narrow":false,"autoplay":false,"showlrc":3,"music":[{"author":"MyGO!!!!!","pic":"https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/audio/mygo/meisekiha_500px.jpg","title":"春日影 (MyGO!!!!! Ver.)","url":"https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/audio/mygo/08. 春日影 (MyGO!!!!! Ver.).m4a","lrc":"https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/audio/mygo/MyGO!!!!! - 春日影 (MyGO!!!!! Ver.) new.lrc"}]};
-				  options.element = document.getElementById("aplayer-FaIXCtIk");
+				  options.element = document.getElementById("aplayer-MkHFVkbl");
 				  var ap = new APlayer(options);
 			    window.aplayers || (window.aplayers = []);
 				  window.aplayers.push(ap);
 			  </script>
 
 
-        <div id="aplayer-bLyGpBfz" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
+        <div id="aplayer-lBNNaWIw" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
 			  <script>
 				  var options = {"narrow":false,"autoplay":false,"showlrc":3,"fixed":true,"music":[{"author":"MyGO!!!!!","pic":"https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/audio/mygo/meisekiha_500px.jpg","title":"春日影 (MyGO!!!!! Ver.)","url":"https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/audio/mygo/08. 春日影 (MyGO!!!!! Ver.).m4a","lrc":"https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/audio/mygo/MyGO!!!!! - 春日影 (MyGO!!!!! Ver.) new.lrc"},{"author":"MyGO!!!!!","pic":"https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/audio/mygo/meisekiha_500px.jpg","title":"春日影 (MyGO!!!!! Ver.)","url":"https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/audio/mygo/08. 春日影 (MyGO!!!!! Ver.).m4a","lrc":"https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/audio/mygo/MyGO!!!!! - 春日影 (MyGO!!!!! Ver.) new.lrc"},{"author":"MyGO!!!!!","pic":"https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/audio/mygo/meisekiha_500px.jpg","title":"春日影 (MyGO!!!!! Ver.)","url":"https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/audio/mygo/08. 春日影 (MyGO!!!!! Ver.).m4a","lrc":"https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/audio/mygo/MyGO!!!!! - 春日影 (MyGO!!!!! Ver.) new.lrc"}]};
-				  options.element = document.getElementById("aplayer-bLyGpBfz");
+				  options.element = document.getElementById("aplayer-lBNNaWIw");
 				  var ap = new APlayer(options);
 			    window.aplayers || (window.aplayers = []);
 				  window.aplayers.push(ap);
@@ -234,7 +239,7 @@
     <span class="token punctuation">-</span> &lt;script src="https<span class="token punctuation">:</span>//gcore.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.js" class="aplayer<span class="token punctuation">-</span>script<span class="token punctuation">-</span>marker"<span class="token punctuation">></span>&lt;/script<span class="token punctuation">></span>
     <span class="token punctuation">-</span> &lt;link rel="stylesheet" type="text/css" href="https<span class="token punctuation">:</span>//gcore.jsdelivr.net/gh/seiki<span class="token punctuation">-</span>yui/APlayer<span class="token punctuation">-</span>DarkMode@1.0.0/APlayer.seiki.css"<span class="token punctuation">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div></div>
 
-<h3 id="有关问题与解决方法"><a href="#有关问题与解决方法" class="headerlink" title="有关问题与解决方法"></a>有关问题与解决方法</h3><p>以及有一个奇怪的地方：不知道是我的 Stellar 主题还是 <code>hexo-tag-aplayer</code> 的问题，吸底模式的 APlayer 主体被加了一句内联的：</p>
+<h3 id="有关问题"><a href="#有关问题" class="headerlink" title="有关问题"></a>有关问题</h3><p>以及有一个奇怪的地方：不知道是我的 Stellar 主题还是 <code>hexo-tag-aplayer</code> 的问题，吸底模式的 APlayer 主体被加了一句内联的：</p>
 <div class="tag-plugin colorful note" child="codeblock"><div class="body"><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token property">margin-bottom</span><span class="token punctuation">:</span> 20px<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></div>
 
 <p>新建一个 CSS，或者下载 <code>APlayer.seiki.css</code>，加入以下样式即可解决：</p>
@@ -265,7 +270,8 @@
     }
 </style>
 
-<h2 id="Giscus"><a href="#Giscus" class="headerlink" title="Giscus"></a>Giscus</h2><p>咕咕咕</p>
+<h2 id="Giscus"><a href="#Giscus" class="headerlink" title="Giscus"></a>Giscus</h2><p>Giscus 它的默认暗色模式过黑，并不适合我的博客，解决思路很简单，</p>
+<p>咕咕咕</p>
 
 <div class="article-footer fs14">
     <section id="license">
@@ -289,7 +295,7 @@
 
 <svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg>
 
-<div id="giscus" src="https://giscus.app/client.js" data-repo="seiki-yui/seiki-yui.github.io" data-repo-id="R_kgDOMPmEng" data-category="Announcements" data-category-id="DIC_kwDOMPmEns4Ci2em" data-mapping="pathname" data-strict="1" data-reactions-enabled="0" data-emit-metadata="0" data-input-position="top" data-theme="https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/static/css/giscus-style.css" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous"></div>
+<div id="giscus" src="https://giscus.app/client.js" data-repo="seiki-yui/seiki-yui.github.io" data-repo-id="R_kgDOMPmEng" data-category="Announcements" data-category-id="DIC_kwDOMPmEns4Ci2em" data-mapping="pathname" data-strict="1" data-reactions-enabled="0" data-emit-metadata="0" data-input-position="top" data-theme="https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/css/Giscus.seiki.with-font.css" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous"></div>
 
     </section>
   </div>
@@ -304,7 +310,7 @@
 
 
 
-<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#APlayer"><span class="toc-text">APlayer</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9A%97%E8%89%B2%E6%A8%A1%E5%BC%8F-CSS"><span class="toc-text">暗色模式 CSS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-text">使用方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#HTML-%E5%8E%9F%E7%94%9F"><span class="toc-text">HTML 原生</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#hexo-tag-aplayer-%E6%8F%92%E4%BB%B6"><span class="toc-text">hexo-tag-aplayer 插件</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%89%E5%85%B3%E9%97%AE%E9%A2%98%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95"><span class="toc-text">有关问题与解决方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Giscus"><span class="toc-text">Giscus</span></a></li></ol></div><div class="widget-footer">
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#APlayer"><span class="toc-text">APlayer</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9A%97%E8%89%B2%E6%A8%A1%E5%BC%8F-CSS"><span class="toc-text">暗色模式 CSS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-text">使用方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#HTML-%E5%8E%9F%E7%94%9F"><span class="toc-text">HTML 原生</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#hexo-tag-aplayer-%E6%8F%92%E4%BB%B6"><span class="toc-text">hexo-tag-aplayer 插件</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%89%E5%85%B3%E9%97%AE%E9%A2%98"><span class="toc-text">有关问题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Giscus"><span class="toc-text">Giscus</span></a></li></ol></div><div class="widget-footer">
 
 <a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/></g></svg><span>回到顶部</span></a><a class="buttom" onclick="util.scrollComment()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M10.46 1.25h3.08c1.603 0 2.86 0 3.864.095c1.023.098 1.861.3 2.6.752a5.75 5.75 0 0 1 1.899 1.899c.452.738.654 1.577.752 2.6c.095 1.004.095 2.261.095 3.865v1.067c0 1.141 0 2.036-.05 2.759c-.05.735-.153 1.347-.388 1.913a5.75 5.75 0 0 1-3.112 3.112c-.805.334-1.721.408-2.977.43a10.81 10.81 0 0 0-.929.036c-.198.022-.275.054-.32.08c-.047.028-.112.078-.224.232c-.121.166-.258.396-.476.764l-.542.916c-.773 1.307-2.69 1.307-3.464 0l-.542-.916a10.605 10.605 0 0 0-.476-.764c-.112-.154-.177-.204-.224-.232c-.045-.026-.122-.058-.32-.08c-.212-.023-.49-.03-.93-.037c-1.255-.021-2.171-.095-2.976-.429A5.75 5.75 0 0 1 1.688 16.2c-.235-.566-.338-1.178-.389-1.913c-.049-.723-.049-1.618-.049-2.76v-1.066c0-1.604 0-2.86.095-3.865c.098-1.023.3-1.862.752-2.6a5.75 5.75 0 0 1 1.899-1.899c.738-.452 1.577-.654 2.6-.752C7.6 1.25 8.857 1.25 10.461 1.25M6.739 2.839c-.914.087-1.495.253-1.959.537A4.25 4.25 0 0 0 3.376 4.78c-.284.464-.45 1.045-.537 1.96c-.088.924-.089 2.11-.089 3.761v1c0 1.175 0 2.019.046 2.685c.045.659.131 1.089.278 1.441a4.25 4.25 0 0 0 2.3 2.3c.515.214 1.173.294 2.429.316h.031c.398.007.747.013 1.037.045c.311.035.616.104.909.274c.29.17.5.395.682.645c.169.232.342.525.538.856l.559.944a.52.52 0 0 0 .882 0l.559-.944c.196-.331.37-.624.538-.856c.182-.25.392-.476.682-.645c.293-.17.598-.24.909-.274c.29-.032.639-.038 1.037-.045h.032c1.255-.022 1.913-.102 2.428-.316a4.25 4.25 0 0 0 2.3-2.3c.147-.352.233-.782.278-1.441c.046-.666.046-1.51.046-2.685v-1c0-1.651 0-2.837-.089-3.762c-.087-.914-.253-1.495-.537-1.959a4.25 4.25 0 0 0-1.403-1.403c-.464-.284-1.045-.45-1.96-.537c-.924-.088-2.11-.089-3.761-.089h-3c-1.651 0-2.837 0-3.762.089" clip-rule="evenodd"/><path fill="currentColor" d="M9 11a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><span>参与讨论</span></a></div></widget>
 </div></aside><div class='float-panel blur'>

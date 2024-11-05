@@ -5,10 +5,32 @@
 
 @import url("/static/css/aplayer-style.css");
 @import url("/static/css/prism-style.css");
+@import url("/static/css/posts-style.css");
 
-article.md-text div.post-cover img.lazy:not(.loaded) {
-    height: 286.5px;
+
+
+.hbe-button {
+    font-family: inherit;
 }
+
+.aplayer-lrc-contents p {
+    text-align: center !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    .search-wrapper >.search-form:has(input:focus) {
+        background: var(--alpha50);
+    }
+
+    .widget-wrapper.post-list .widget-body a:hover {
+        background: var(--alpha20);
+    }
+}
+
+/* article.md-text div.post-cover img.lazy:not(.loaded) {
+    height: 286.5px;
+} */
+
 div.l_body {
     font-family: 'Noto Sans Display','Noto Sans SC';
 }

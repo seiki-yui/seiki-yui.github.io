@@ -1,0 +1,5 @@
+@media (prefers-color-scheme: dark) {
+    div[data-bg="/static/img/icon/github.svg"] {
+        background-image: url(/static/img/icon/github-light.svg) !important;
+    }
+}

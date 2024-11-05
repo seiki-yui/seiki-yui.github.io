@@ -9,8 +9,8 @@ https://blog.seiki.fun/about/index.html
 https://blog.seiki.fun/article/lycoris-coconut-juice/
 https://blog.seiki.fun/article/foobar-use-vst/
 https://blog.seiki.fun/
-https://blog.seiki.fun/tags/Lycoris-Recoil/
 https://blog.seiki.fun/tags/Foobar2000/
+https://blog.seiki.fun/tags/Lycoris-Recoil/
 https://blog.seiki.fun/tags/Web/
 https://blog.seiki.fun/tags/CSS/
 https://blog.seiki.fun/tags/ghostpia/
@@ -18,14 +18,14 @@ https://blog.seiki.fun/tags/Art-Books/
 https://blog.seiki.fun/tags/%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3-%E3%81%BE%E3%81%A9%E3%81%8B%E2%98%86%E3%83%9E%E3%82%AE%E3%82%AB/
 https://blog.seiki.fun/tags/Puella-Magi-Madoka-Magica/
 https://blog.seiki.fun/tags/Scans/
-https://blog.seiki.fun/tags/BanG-Dream-It-s-MyGO/
 https://blog.seiki.fun/tags/Doujin-Fanmades/
 https://blog.seiki.fun/tags/Albums-Music/
 https://blog.seiki.fun/tags/CDs/
-https://blog.seiki.fun/categories/%E5%8F%91%E5%B8%83/
+https://blog.seiki.fun/tags/BanG-Dream-It-s-MyGO/
 https://blog.seiki.fun/categories/%E7%AC%94%E8%AE%B0/
-https://blog.seiki.fun/categories/%E7%AC%94%E8%AE%B0/%E8%80%83%E6%8D%AE/
+https://blog.seiki.fun/categories/%E5%8F%91%E5%B8%83/
 https://blog.seiki.fun/categories/%E7%AC%94%E8%AE%B0/%E6%8A%80%E6%9C%AF/
+https://blog.seiki.fun/categories/%E7%AC%94%E8%AE%B0/%E8%80%83%E6%8D%AE/
 https://blog.seiki.fun/categories/%E5%8F%91%E5%B8%83/%E8%B5%84%E6%BA%90/
 https://blog.seiki.fun/categories/%E8%BD%AC%E8%BD%BD/
 https://blog.seiki.fun/categories/%E8%BD%AC%E8%BD%BD/%E4%BA%8C%E6%AC%A1%E5%85%83/

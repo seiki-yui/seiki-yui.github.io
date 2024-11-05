@@ -129,6 +129,20 @@
   </url>
   
   <url>
+    <loc>https://blog.seiki.fun/tags/ghostpia/</loc>
+    <lastmod>2024-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.seiki.fun/tags/Art-Books/</loc>
+    <lastmod>2024-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.seiki.fun/tags/%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3-%E3%81%BE%E3%81%A9%E3%81%8B%E2%98%86%E3%83%9E%E3%82%AE%E3%82%AB/</loc>
     <lastmod>2024-11-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -150,14 +164,7 @@
   </url>
   
   <url>
-    <loc>https://blog.seiki.fun/tags/ghostpia/</loc>
-    <lastmod>2024-11-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.seiki.fun/tags/Art-Books/</loc>
+    <loc>https://blog.seiki.fun/tags/BanG-Dream-It-s-MyGO/</loc>
     <lastmod>2024-11-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -184,13 +191,6 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://blog.seiki.fun/tags/BanG-Dream-It-s-MyGO/</loc>
-    <lastmod>2024-11-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
@@ -208,7 +208,7 @@
   </url>
   
   <url>
-    <loc>https://blog.seiki.fun/categories/%E5%8F%91%E5%B8%83/%E8%B5%84%E6%BA%90/</loc>
+    <loc>https://blog.seiki.fun/categories/%E7%AC%94%E8%AE%B0/%E8%80%83%E6%8D%AE/</loc>
     <lastmod>2024-11-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -222,7 +222,7 @@
   </url>
   
   <url>
-    <loc>https://blog.seiki.fun/categories/%E7%AC%94%E8%AE%B0/%E8%80%83%E6%8D%AE/</loc>
+    <loc>https://blog.seiki.fun/categories/%E5%8F%91%E5%B8%83/%E8%B5%84%E6%BA%90/</loc>
     <lastmod>2024-11-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

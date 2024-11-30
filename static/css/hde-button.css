@@ -1,0 +1,79 @@
+.hbe-button {
+    all: revert;
+
+    background: #1cd0fd;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px calc(4px + 1em);
+    transition: background 0.2s ease-out;
+    -moz-transition: background 0.2s ease-out;
+    -webkit-transition: background 0.2s ease-out;
+    -o-transition: background 0.2s ease-out;
+    
+    margin-top: 8px;
+    margin-bottom: 8px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1;
+    padding: 0.75rem 2rem;
+    border-radius: 4px;
+    font-size: 0.9375rem;
+    user-select: none;
+
+    border: none;
+    cursor: pointer;
+}
+.hbe-button:hover, .hbe-button:hover:after {
+    background: #ff5724;
+}
+.hbe-button:active {
+    box-shadow: none;
+    top: 0;
+}
+.hbe-button:after,.hbe-button:before {
+    all: revert;
+    /* font-family: inherit; */
+}
+
+.hbe-button:after {
+    background: #1cd0fd;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px calc(4px + 1em);
+    transition: background 0.2s ease-out;
+    -moz-transition: background 0.2s ease-out;
+    -webkit-transition: background 0.2s ease-out;
+    -o-transition: background 0.2s ease-out;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: block;
+    margin: 0 auto;
+
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1;
+    padding: 0.75rem 2rem;
+    border-radius: 4px;
+    font-size: 0.9375rem;
+    user-select: none;
+
+    border: none;
+    cursor: pointer;
+
+    content: "重新加密";
+}

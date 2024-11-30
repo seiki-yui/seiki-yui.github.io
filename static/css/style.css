@@ -9,13 +9,8 @@
 
 
 
-.hbe-button {
-    font-family: inherit;
-}
 
-.aplayer-lrc-contents p {
-    text-align: center !important;
-}
+
 
 @media (prefers-color-scheme: dark) {
     .search-wrapper >.search-form:has(input:focus) {
@@ -37,6 +32,11 @@ div.l_body {
 
 li:not([class]) a:not([class]):hover, p:not([class]) a:not([class]):hover, table a:not([class]):hover {
     background: linear-gradient(0deg, var(--theme-link), var(--theme-link)) no-repeat left 100% / 100% 1px;
+}
+
+
+.aplayer-lrc-contents p {
+    text-align: center !important;
 }
 
 iframe {

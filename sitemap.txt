@@ -1,3 +1,4 @@
+https://blog.seiki.fun/about/index.html
 https://blog.seiki.fun/article/foobar-use-vst/
 https://blog.seiki.fun/article/ghostpia-fictional-alphabets/
 https://blog.seiki.fun/article/mygo-psychological-defense-mechanism/
@@ -5,13 +6,12 @@ https://blog.seiki.fun/article/madoka-magica-doujin-albums/
 https://blog.seiki.fun/article/previous-projects/
 https://blog.seiki.fun/article/blog-dark-mode/
 https://blog.seiki.fun/article/test/
-https://blog.seiki.fun/about/index.html
 https://blog.seiki.fun/article/lycoris-coconut-juice/
 https://blog.seiki.fun/
 https://blog.seiki.fun/tags/Lycoris-Recoil/
-https://blog.seiki.fun/tags/Foobar2000/
 https://blog.seiki.fun/tags/Web/
 https://blog.seiki.fun/tags/CSS/
+https://blog.seiki.fun/tags/Foobar2000/
 https://blog.seiki.fun/tags/ghostpia/
 https://blog.seiki.fun/tags/Art-Books/
 https://blog.seiki.fun/tags/Puella-Magi-Madoka-Magica/

@@ -175,3 +175,11 @@ rbh, .rbh, rbh ruby, .rbh ruby {
     background: var(--block);
     padding: 0.2em;
 }
+
+.text-center, .text-center * {
+    text-align: center !important;
+}
+
+sb {
+  font-weight: 500;  
+}

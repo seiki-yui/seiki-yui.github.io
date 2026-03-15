@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-CN">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<meta name="color-scheme" content="light dark">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="shortcut icon" type="images/x-icon" sizes="16x16 32x32 48x48" href="./favicon.ico">
+		<link rel="icon" type="image/vnd.microsoft.icon" sizes="16x16 32x32 48x48" href="./favicon.ico">
+		
+		<link rel="icon" type="image/jpeg" href="./avatar.jpg" sizes="16x16" />   
+		<link rel="icon" type="image/jpeg" href="./avatar.jpg" sizes="32x32" />
+		<link rel="icon" type="image/jpeg" href="./avatar.jpg" sizes="48x48" />
+		<link rel="icon" type="image/jpeg" href="./avatar.jpg" sizes="64x64" />
+		<link rel="icon" type="image/jpeg" href="./avatar.jpg" sizes="128x128" />
+		<link rel="icon" type="image/jpeg" href="./avatar.jpg" sizes="256x256" /> 
+
+		<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;700&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"> -->
+		
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap">
+		<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"> -->
+		<!-- <link rel="stylesheet" href="./regexpal.css" /> -->
+
+		<title>24-08-30 注音生成器</title>
+
+		
+		<link rel="modulepreload" href="./app/immutable/entry/start.BXo29fXT.js">
+		<link rel="modulepreload" href="./app/immutable/chunks/CCj4nlT3.js">
+		<link rel="modulepreload" href="./app/immutable/chunks/DEcYEW4O.js">
+		<link rel="modulepreload" href="./app/immutable/chunks/DnVhBpdb.js">
+		<link rel="modulepreload" href="./app/immutable/entry/app.D8fsFzu1.js">
+		<link rel="modulepreload" href="./app/immutable/chunks/BkMNBwS9.js">
+		<link rel="modulepreload" href="./app/immutable/chunks/YH6L1ALI.js">
+		<link rel="modulepreload" href="./app/immutable/chunks/Ldcv-4-O.js">
+		<link rel="modulepreload" href="./app/immutable/nodes/0.CT0s2owA.js">
+		<link rel="modulepreload" href="./app/immutable/nodes/2.Dn4r77Fd.js">
+	</head>
+   
+	<body data-sveltekit-preload-data="hover"  class="pico">
+		<header class="container">
+			<h1>注音生成器</h1>
+		</header>
+		<main class="container">
+			<!-- <article> -->
+				<div style="display: contents">
+					<!--[--><!--[--><!----><!----><div class="grid"><div><h2>日语</h2> <textarea rows="12" id="input_jp"></textarea></div> <div><h2>中文</h2> <textarea rows="12" id="input_cn"></textarea> <input type="checkbox" name="" id="check_add_cn" checked> <label for="check_add_cn">隔行插入中文</label></div></div> <label for="select_regexp">从预设里选择一个</label> <select id="select_regexp" name="staff"><!--[--><option value="[object Object]">...</option><option value="[object Object]">默认	汉字(假名)</option><option value="[object Object]">萌娘百科 {{photransa|汉字|假名|}} 等</option><!--]--></select> <label for="edit_regexp_div">编辑正则表达式</label> <div class="like-item" id="edit_regexp_div"><ul id="items"><!--[--><li name="li"><details class="item" open><summary><input type="checkbox" checked> 自定义表达式 · 1 <div class="summary_control"><button type="button">+</button> <button type="button" class="secondary" disabled>-</button></div></summary> <div><label for="regex-$id-m6gmkdkq-dzr57wu4w">正则表达式</label> <div role="group"><input type="text" id="regex-$id-m6gmkdkq-dzr57wu4w" class="edit_regexp_input regex"> <input type="text" value="gm" id="regex-flag-$id-m6gmkdkq-dzr57wu4w" class="edit_regexp_input flag regex"></div></div> <div class="replace"><label for="replace-$id-m6gmkdkq-dzr57wu4w-D">捕获组替换</label></div> <input type="text" value="" id="replace-$id-m6gmkdkq-dzr57wu4w-D" class="edit_regexp_input"></details></li><!--]--></ul></div> <label for="output">输出</label> <div class="like-item output" id="output"><!----><!----></div><!----><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_i3qnaz = {
+						base: new URL(".", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./app/immutable/entry/start.BXo29fXT.js"),
+						import("./app/immutable/entry/app.D8fsFzu1.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		
+				</div>
+			<!-- </article> -->
+		</main>
+
+		<style>
+            div.like-item,details.item {
+                --pico-background-color: var(--pico-form-element-background-color);
+                --pico-border-color: var(--pico-form-element-border-color);
+                --pico-color: var(--pico-form-element-color);
+                --pico-box-shadow: none;
+                margin-bottom: var(--pico-spacing);
+                border: var(--pico-border-width) solid var(--pico-border-color);
+                border-radius: var(--pico-border-radius);
+                padding: var(--pico-form-element-spacing-vertical) var(--pico-form-element-spacing-horizontal);
+				/* padding-bottom: 0; */
+				/* margin: 0; */
+                box-sizing: border-box;
+            }
+			details.item>input:last-child{
+				margin-bottom: 4px;
+			}
+
+            ul li {
+                list-style: none;
+            }
+            ul {
+                padding: 0;
+                margin: 0;
+            }
+			ul li:last-child details {
+				margin-bottom: 0;
+			}
+			[role=group] [role=button], [role=group] [type=button], [role=group] [type=reset], [role=group] [type=submit], [role=group] button, [role=search] [role=button], [role=search] [type=button], [role=search] [type=reset], [role=search] [type=submit], [role=search] button {
+				width: 150px;
+			}
+			summary {
+				display: flex;
+			}
+			summary .summary_control {
+				 margin-left: auto;
+			}
+			summary .summary_control button {
+				margin: -10px 0;
+				padding: 3px;
+				width: 40px;
+			}
+			.replace {
+				display: flex;
+			}
+			.replace input[type=checkbox] {
+				display: inline-block;
+				vertical-align: text-bottom;
+			}
+			.replace .replace_control {
+				margin-left: auto;
+			}
+			.replace .replace_control button {
+				margin: 3px 0;
+				padding: 0 5px;
+				width: 30px;
+			}
+            /* details.item {
+                position: relative;
+                display: block;
+                padding: .75rem 1.25rem;
+                margin-bottom: -1px;
+                background-color: #fff;
+                border: 1px solid rgba(0, 0, 0, .125);
+                border-radius: 5px;
+            } */
+             
+		</style>
+		<style>
+			:root {
+				/* 'Lato',  */
+				--pico-font-family: "Noto Sans Display", "Noto Sans SC", var(--pico-font-family-sans-serif);
+				font-family: var(--pico-font-family);
+			}
+			textarea {
+                font-size:87.5%;
+            }
+            .output {
+                white-space: pre;
+                word-spacing: normal;
+                word-break: normal;
+                overflow: auto !important;
+            }
+            .cn, .cn *  {
+                --pico-font-family: "Noto Sans Display", "Noto Sans SC", var(--pico-font-family-sans-serif)
+                /* font-family: '更纱黑体 SC Light'; */
+            }
+            .jp, .jp * {
+                --pico-font-family: "Noto Sans Display", "Noto Sans JP", var(--pico-font-family-sans-serif)
+                /* font-family: 'Sarasa Gothic J Light'; */
+            }
+            /* .jp rt {
+                font-size: 10.666px;
+            } */
+            .edit_regexp_input, #select_regexp {
+                font-family: 'Jetbrains Mono Light', var(--pico-font-family);
+                white-space: pre;
+                word-spacing: normal;
+                word-break: normal;
+                overflow: auto !important;
+            }
+			.edit_regexp_input.flag {
+				width: 10%;
+				min-width: 70px;
+			}
+		</style>
+	</body>
+</html>

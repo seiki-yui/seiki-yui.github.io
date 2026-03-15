@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #fff;
+            min-height: 90vh;
+            margin-top: 500px;
+            margin-left: 500px;
+        }
+
+        :root {
+            --width: 292px;
+            --height: 82px;
+            --depth: 340px;
+            /* transition: all 1s ease-out; */
+            /* animation: fuck 2s linear infinite */
+        }
+        
+        /* @keyframes fuck {
+            from {
+                --width: 100px;
+                --height: 240px;
+                --depth: 40px;
+            }
+            to {
+                --width: 100px;
+                --height: 70px;
+                --depth: 130px;
+            }
+        } */
+
+        .threed {
+            /* perspective: 800px; */
+            /* perspective-origin: 50% -200px; */
+            perspective: 800px;
+            perspective-origin: 100px -100px
+        }
+
+        .driver {
+            width: var(--width);
+            height: var(--height);
+            /* transform: rotateX(-30deg) rotateY(40deg); */
+            transform-style: preserve-3d;
+            position: relative;
+            animation: rotate 10s linear infinite;
+
+        }
+
+        .face {
+            position: absolute;
+            /* width: var(--width); */
+            width: 100%;
+            height: 100%;
+            background-color: hsl(39, 100%, var(--lightness));
+            transform-style: preserve-3d;
+        }
+
+        .face.front {
+            /* --lightness: 66%; */
+            background-color: #00000000;
+            width: var(--width);
+            height: var(--height);
+        }
+        /* .face.front:after {
+            background: #5b5b5b;
+            content: "";
+            height: 4px;
+            position: absolute;
+            
+            width: 100%;
+        } */
+        .face.front-frame {
+            border: 14px solid #5b5b5b;
+            border-bottom-width: 30px;
+            border-top-width: 10px;
+            transform: translate3d(0, 0, 0);
+        }
+
+        .face.bottom {
+            --lightness: 74%;
+            top: 100%;
+            width: var(--width);
+            height: var(--depth);
+            transform-origin: top;
+            transform: rotateX(-90deg);
+        }
+
+        .face.top {
+            --lightness: 74%;
+            bottom: 100%;
+            width: var(--width);
+            height: var(--depth);
+            transform-origin: bottom;
+            transform: rotateX(90deg);
+        }
+
+        .face.back {
+            --lightness: 78%;
+            bottom: calc(var(--depth) + var(--height));
+            width: var(--width);
+            height: var(--height);
+            transform-origin: center calc(var(--height) + 0.5 * var(--depth)) calc(-0.5 * var(--depth));
+            transform: rotateX(180deg);
+        }
+
+        .face.right {
+            --lightness: 70%;
+            left: 100%;
+            width: var(--depth);
+            height: var(--height);
+            transform-origin: left;
+            transform: rotateY(90deg);
+        }
+
+        .face.left {
+            --lightness: 70%;
+            right: 100%;
+            width: var(--depth);
+            height: var(--height);
+            transform-origin: right;
+            transform: rotateY(-90deg);
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0);
+            }
+
+            to {
+                transform: rotateY(360deg);
+                
+            }
+        }
+    </style>
+    <div class="threed">
+        <div class="driver">
+            <div class="face front">
+                <div class="face front-frame"></div>
+            </div>
+            <div class="face back">back</div>
+            <div class="face left">left</div>
+            <div class="face top">top</div>
+            <div class="face bottom">bottom</div>
+            <div class="face right">right</div>
+        </div>
+    </div>
+</body>
+
+</html>

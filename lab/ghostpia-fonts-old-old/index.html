@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ghostpia 架空文字生成器</title>
+
+    <link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap">
+
+</head>
+<body>
+    <style>
+        :root {
+            /* 'Lato',  */
+            --pico-font-family:"Noto Sans Display", "Noto Sans SC", var(--pico-font-family-sans-serif);
+            font-family: var(--pico-font-family);
+        }
+
+        @font-face {
+            font-family: 'ghostpia pixel';
+            font-style: normal;
+            font-weight: 400;
+            font-stretch: 100%;
+            font-display: swap;
+            src: url(https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/font/ghostpiapixel/0.111/ghostpiapixel-Regular.0.111.woff2) format('woff2'),
+                 url(https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/font/ghostpiapixel/0.111/ghostpiapixel-Regular.0.111.woff) format('woff'),
+                 url(https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/font/ghostpiapixel/0.111/ghostpiapixel-Regular.0.111.ttf) format('truetype');
+            
+        }
+        .grid textarea {
+            white-space: break-spaces;
+        }
+        
+        .content#pixel {
+            font-family: "ghostpia pixel", var(--pico-font-family);
+            font-size: 150%;
+            
+        }
+        .content#notpixel {
+            font-family: "Jetbrains Mono", var(--pico-font-family);
+            font-weight: 300;
+            font-size: 125%;
+            line-height: 1.8;
+            font-variant-ligatures: none;
+        }
+
+        .content.code {
+            font-family: "Jetbrains Mono", var(--pico-font-family);
+            white-space: pre;
+        }
+
+    </style>
+    
+    
+    <main class="container">
+        <header class="container">
+            <h1>ghostpia 架空文字生成器</h1>
+        </header>
+        <article>
+            <p>
+                此页面还在建设中…… 网址可能会变动。
+            </p>
+            <p>
+                下列特殊的组合会显示 ghostpia 的 logo。
+                <ul>
+                    <li>
+                        *#*#ghostpia_logo#*#*
+                    </li>
+                    <li>
+                        *#*#ghostpia_pixel_by_xiao_zheng#*#*
+                    </li>
+                </ul> 
+                不知道为什么，前面是标点的话没法正常显示……
+            </p>
+            <p>
+                目前是0.111版本。
+            </p>
+            <div class="grid">
+                <div>
+                    <h4>预览</h4>
+                    <textarea class="content" id="pixel" rows="10">ABCDEFGHIJKLMNOPQRSTUVWXYZ はばぱ 
+0123456789 *+-/:<=>?@[\]^_`´{|}~ www
+ghostpia pixel by xiao_zheng (seiki yui)
+
+The quick brown fox jumps over the lazy dog.
+
+*#*#ghostpia_logo#*#* </textarea>     
+                </div>
+                <div>
+                    <h4>编辑</h4>
+                    <textarea class="content" id="notpixel" rows="10">ABCDEFGHIJKLMNOPQRSTUVWXYZ はばぱ 
+0123456789 *+-/:<=>?@[\]^_`´{|}~ www
+ghostpia pixel by xiao_zheng (seiki yui)
+
+The quick brown fox jumps over the lazy dog.
+
+*#*#ghostpia_logo#*#* </textarea>
+                </div>
+            </div>
+            <script>
+                let pixel = document.getElementById("pixel")
+                let edit = document.getElementById("notpixel")
+                edit.addEventListener('input', (event) => {
+                    pixel.value = edit.value
+                });
+                pixel.addEventListener('input', (event) => {
+                    edit.value = pixel.value
+                });
+            </script>
+
+            <!-- <div>
+                <h4>使用</h4>
+                <textarea class="content code" readonly rows="11">@font-face {
+    font-family: 'ghostpia pixel';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/font/ghostpiapixel/0.111/ghostpiapixel-Regular.0.111.woff2) format('woff2'),
+         url(https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/font/ghostpiapixel/0.111/ghostpiapixel-Regular.0.111.woff) format('woff'),
+         url(https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/font/ghostpiapixel/0.111/ghostpiapixel-Regular.0.111.ttf) format('truetype');
+}</textarea>
+            </div> -->
+            之后用 Svelte 重写一下这个页面 ，补充一个版权信息吧
+        </article>
+    </main>
+</body>
+</html>

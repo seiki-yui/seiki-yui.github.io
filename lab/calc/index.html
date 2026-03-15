@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap">
+
+</head>
+<body>
+    <input type="text" id="in">
+    <div id="out">
+
+    <!-- </div> -->
+    <script>
+        let input = document.getElementById("in")
+        let output = document.getElementById("out")
+        input.oninput = () => {
+            let str = input.value
+            let j = ""
+            let k = ""
+            let i = 0
+            Array.from(str.split("")).forEach((it) => {
+                i += it.charCodeAt(0) - 96
+                j += it + " + "
+                k += (it.charCodeAt(0) - 96) + " + "
+            })
+            output.innerHTML = i + "<br>" + j + "<br>" + k
+        }
+    </script>
+    <div id="w" style="display: none;">
+<br />如果26個英文字母
+<br />A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+<br />分别等於
+<br />1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26
+<br />
+<br />那麼 ~
+<br />Knowledge（知識）
+<br />K + N + O +W + L + E + D + G + E
+<br />11 + 14 + 15 + 23 + 12 + 5 + 4 + 7 + 5
+<br />= 96%
+<br />
+<br />Workhard （努力工作）
+<br />W + O + R + K + H + A + R + D
+<br />23 + 15 + 18 + 11 + 8 + 1 + 18 + 4
+<br />= 98%
+<br />
+<br />也就是說知識和努力工作對我們人生的影響可以達到 96％ 和 98％
+<br />
+<br />Luck（好運）
+<br />L + U + C + K
+<br />12 + 21 + 3 + 11
+<br />= 47%
+<br />
+<br />Love（愛情）
+<br />L + O+ V + E
+<br />12 +15+ 22 + 5
+<br />= 54%
+<br />
+<br />看來，這些我們通常認為重要的東西卻並沒起到最重要的作用。
+<br />
+<br />那麼，什麼可以决定我們 100％ 的人生呢？
+<br />
+<br />是Money（金錢）嗎?
+<br />M + O + N + E + Y
+<br />13 +15 +14 + 5 + 25
+<br />= 72%
+<br />看來也不是
+<br />
+<br />是Leadership（領導能力）嗎?
+<br />L+ E + A+ D + E+ R + S + H + I + P
+<br />12 + 5 + 1+ 4 + 5 + 18 + 19 + 8 + 9 +16
+<br />= 89%
+<br />還不是
+<br />
+<br />金錢，權力也不能完全决定我們的生活。那是什麼呢？
+<br />
+<br />其實，真正能使我們生活圆满的東西就在我們附近！
+<br />
+<br />CWXCWX
+<br />C+W+X+C+W+X
+<br />3 + 23 + 24 + 3 + 23 + 24
+<br />= 100%
+<br />
+<br />(CWX)²能夠 100％ 的影響我們的生活，
+<br />或者說能夠使我們的生活達到 100% 的圓滿！
+    </div>
+    <style>
+        body {
+            padding: 100px;
+        }
+        #w {
+            width: 240px;
+            font-family: 'Noto Sans Display','Sarasa Gothic TC';
+			/* white-space: pre; */
+            
+			/* word-spacing: normal; */
+			/* word-break: normal; */
+			/* overflow: auto !important; */
+            font-weight: 400;
+        }
+    </style>
+</body>
+</html>

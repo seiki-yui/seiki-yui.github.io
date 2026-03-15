@@ -1,0 +1,25 @@
+﻿/* Regex Colorizer: RegexPal theme */
+
+.regex {color: #000; font-family: Consolas, "Source Code Pro", Monospace; white-space: pre-wrap; word-break: break-all; overflow-wrap: anywhere;}
+.regex b {font-weight: normal;}
+.regex i {font-style: normal;}
+.regex u {text-decoration: none;}
+
+/* metasequence */
+.regex b {background: #aad1f7;}
+/* error */
+.regex b.err {background: #ff4300;}
+
+/* char class */
+.regex i {background: #f9ca69;}
+/* char class: metasequence */
+.regex i b {background: #f7a700;}
+/* char class: range-hyphen */
+.regex i u {background: #efba4a;}
+
+/* group: depth */
+.regex b.g1 {background: #d2f854;}
+.regex b.g2 {background: #9ec70c;}
+.regex b.g3 {background: #ecc9f7;}
+.regex b.g4 {background: #54b70b;}
+.regex b.g5 {background: #b688cf;}

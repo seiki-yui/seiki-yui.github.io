@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css">
+    <script src="https://gcore.jsdelivr.net/npm/sortablejs@1.15.6/Sortable.min.js"></script>
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <title>24-08-30 注音生成器</title>
+</head>
+<body class="pico">
+    <header class="container">
+        <h1>注音生成器</h1>
+    </header>
+    <main class="container">
+<!-- 
+        <style>
+            details.item {
+                --pico-background-color: var(--pico-form-element-background-color);
+                --pico-border-color: var(--pico-form-element-border-color);
+                --pico-color: var(--pico-form-element-color);
+                --pico-box-shadow: none;
+                margin-bottom: var(--pico-spacing);
+                border: var(--pico-border-width) solid var(--pico-border-color);
+                border-radius: var(--pico-border-radius);
+                padding: var(--pico-form-element-spacing-vertical) var(--pico-form-element-spacing-horizontal);
+
+                box-sizing: border-box;
+            }
+
+            ul li {
+                list-style: none;
+            }
+            ul {
+                padding: 0;
+                margin: 0;
+            }
+            /* details.item {
+                position: relative;
+                display: block;
+                padding: .75rem 1.25rem;
+                margin-bottom: -1px;
+                background-color: #fff;
+                border: 1px solid rgba(0, 0, 0, .125);
+                border-radius: 5px;
+            } */
+             
+        </style>
+
+        <article>
+
+            <ul id="items">
+                <li>
+                    <details class="item" open>
+                        <summary>自定义表达式 · 1</summary>
+                        <div class="edit_regexp_div content">
+                            <label>正则表达式</label><input type="text">
+                            <label>替换 · 1</label><input type="text">
+                        </div>
+                      </details>
+                </li>
+                <li>
+                    <details class="item">
+                        <summary>自定义表达式 · 2</summary>
+                        <div class="edit_regexp_div content">
+                            <label>正则表达式</label><input type="text">
+                            <label>替换 · 1</label><input type="text">
+                        </div>
+                      </details>
+                </li>
+                <li>
+                    <details class="item">
+                        <summary>自定义表达式 · 3</summary>
+                        <div class="edit_regexp_div content">
+                            <label>正则表达式</label><input type="text">
+                            <label>替换 · 1</label><input type="text">
+                        </div>
+                      </details>
+                </li>
+            </ul>
+
+        </article>
+
+
+        <script>
+
+            var ele_items = document.getElementById('items');
+            var sortable = Sortable.create(ele_items,{
+                animation: 200,
+                handle: "summary"
+            });
+
+        </script>
+
+        <script>
+            var duration = 300
+            var easing = "cubic-bezier(0.39, 0.575, 0.565, 1.0)"
+
+            class Accordion {
+                constructor(el, duration, easing) {
+                    this.el = el;
+                    this.summary = el.querySelector("summary");
+                    this.content = el.querySelector(".content");
+                    this.animation = null;
+                    this.isClosing = false;
+                    this.isExpanding = false;
+                    this.summary.addEventListener("click", (e => this.onClick(e)))
+
+                    this.duration = duration;
+                    this.easing = easing;
+                }
+                onClick(e) {
+                    e.preventDefault();
+                    this.el.style.overflow = "hidden";
+                    if (this.isClosing || !this.el.open) {
+                        this.open()
+                    } else if (this.isExpanding || this.el.open) {
+                        this.shrink()
+                    }
+                }
+                shrink() {
+                    this.isClosing = true;
+                    const startHeight = `${this.el.offsetHeight}px`;
+                    const endHeight = `${this.el.offsetHeight-this.summary.offsetHeight-this.content.offsetHeight}px`;
+                    if (this.animation) {
+                        this.animation.cancel()
+                    }
+                    this.animation = this.el.animate({
+                        height: [startHeight, endHeight]
+                    }, {
+                        duration: this.duration,
+                        easing: this.easing
+                    });
+                    this.animation.onfinish = () => this.onAnimationFinish(false);
+                    this.animation.oncancel = () => this.isClosing = false
+                }
+                open() {
+                    this.el.style.height = `${this.el.offsetHeight}px`;
+                    this.el.open = true;
+                    window.requestAnimationFrame((() => this.expand()))
+                }
+                expand() {
+                    this.isExpanding = true;
+                    const startHeight = `${this.el.offsetHeight}px`;
+                    const endHeight = `${this.el.offsetHeight+this.summary.offsetHeight+this.content.offsetHeight}px`;
+                    if (this.animation) {
+                        this.animation.cancel()
+                    }
+                    this.animation = this.el.animate({
+                        height: [startHeight, endHeight]
+                    }, {
+                        duration: this.duration,
+                        easing: this.easing
+                    });
+                    this.animation.onfinish = () => this.onAnimationFinish(true);
+                    this.animation.oncancel = () => this.isExpanding = false
+                }
+                onAnimationFinish(open) {
+                    this.el.open = open;
+                    this.animation = null;
+                    this.isClosing = false;
+                    this.isExpanding = false;
+                    this.el.style.height = this.el.style.overflow = ""
+                }
+            }
+            document.querySelectorAll("details").forEach((el => {
+                new Accordion(el, duration, easing)
+            }));
+        </script> -->
+
+        
+
+        <div class="grid">
+            <div>
+                <h2>日语</h2>
+                <textarea rows="15" id="input_jp" autofocus></textarea>
+            </div>
+            <div>
+                <h2>中文</h2>
+                <textarea rows="15" id="input_cn"></textarea>
+                <input type="checkbox" name="" id="check_add_cn" checked>隔行插入中文</input>
+            </div>
+        </div>
+        <div>
+            <label for="select_regexp">从预设里选择一个</label>
+            <select id="select_regexp" name="staff"></select>
+            <div class="edit_regexp_div">
+                <label for="edit_regexp_pre">正则表达式 - 前过滤</label><input type="text" id="edit_regexp_pre">
+                <label for="edit_regexp">正则表达式</label><input type="text" id="edit_regexp">
+                <label for="edit_regexp_end">正则表达式 - 后过滤</label><input type="text" id="edit_regexp_end">
+            </div>
+
+            
+            
+            <button type="button" id="button_yaru" onclick="button_onclick()">やる</button>　
+            
+        </div>
+        
+        <div><p id="output"></p></div>
+
+        <style>
+            * {
+                font-family: '更纱黑体 SC';
+            }
+            textarea {
+                font-size:75%;
+            }
+            #output {
+                white-space: pre;
+                word-spacing: normal;
+                word-break: normal;
+                overflow: auto !important;
+            }
+            .cn, .cn *  {
+                font-family: '更纱黑体 SC Light';
+            }
+            .jp, .jp * {
+                font-family: 'Sarasa Gothic J Light';
+            }
+            .jp rt {
+                font-size: 10.666px;
+            }
+            .edit_regexp_div input, #select_regexp {
+                font-family: 'Jetbrains Mono Light','等距更纱黑体 SC';
+                white-space: pre;
+                word-spacing: normal;
+                word-break: normal;
+                overflow: auto !important;
+            }
+        </style>
+
+        <script>
+            // var punc = "[`~!@#$%^&*_\\-+=<>?:\\\"{}|,.\\/;'\\[\\]·~！@#￥%……&*（）—\\-+={}|《》？：“”【】、；‘'，。、]"
+            // console.log(punc.toString()
+            // var regexp = `/((?:[^ぁ-ヾ\s（）])+)[\(（]([ぁ-ヾ]+)[\))]/gm`
+
+            var empty = new RegExp("", "gm")
+            let list_regexp = [
+                [empty, /((?:[^ぁ-ヾ\s\w（）])+)[(（]([ぁ-ヾ]+)[)）]/gm, empty, "默认	汉字(假名)"],
+                [empty, /([^ぁ-ヾ\s\w（）|]+)_([ぁ-ヾ]+)/gm, /{{Photransa\||}}/gm, "萌娘百科	{{Photransa|汉字_假名|}}"],
+                [empty, /([^ぁ-ヾ\s\w（）|]+)\|([ぁ-ヾ]+)/gm, /{{photrans2\||}}/gm, "萌娘百科 {{photrans2|汉字|假名|}}"],
+                [empty, /([^ぁ-ヾ\s（）|]+)\|([ぁ-ヾ]+)/gm, /{{(photrans|ruby)\||}}/gm, "萌娘百科 {{photrans或ruby|汉字|假名|}}"],
+                [empty, /<span class="ruby"><span class="rb">([^ぁ-ヾ\s\w（）]+)<\/span><span class="rt">([ぁ-ヾ]+)<\/span><\/span>/gm, /<br>/gm, "UtaTen    <span class=\"ruby\">"]
+            ]
+
+            var ele_edit_regexp_pre = document.getElementById("edit_regexp_pre")
+            var ele_edit_regexp = document.getElementById("edit_regexp")
+            var ele_edit_regexp_end = document.getElementById("edit_regexp_end")
+            var ele_select_regexp = document.getElementById("select_regexp")
+
+            var ele_input_jp = document.getElementById("input_jp")
+            var ele_input_cn = document.getElementById("input_cn")
+            var ele_check_add_cn = document.getElementById("check_add_cn")
+
+            for (let it of list_regexp) {
+                var ele_option = document.createElement("option")
+                ele_select_regexp.appendChild(ele_option)
+                ele_option.value = it[1].toString()
+                var ele_text = document.createTextNode(it[3])
+                ele_option.appendChild(ele_text)
+            }
+
+            ele_select_regexp.onchange = () => {
+                ele_edit_regexp_pre.value = list_regexp[ele_select_regexp.selectedIndex][0].source
+                ele_edit_regexp.value     = list_regexp[ele_select_regexp.selectedIndex][1].source
+                ele_edit_regexp_end.value = list_regexp[ele_select_regexp.selectedIndex][2].source
+                button_onclick()
+            }
+
+            button_onclick = function() {
+                var ele_output = document.getElementById("output")
+                
+                if (
+                    !(ele_edit_regexp.value.length > 0) 
+                    && (ele_edit_regexp.value != "(?:)")
+                ) {
+                    ele_output.innerHTML = ele_input_jp.value
+                    return;
+                }
+
+                var regexp_pre = new RegExp(ele_edit_regexp_pre.value, "gm")
+                var regexp = new RegExp(ele_edit_regexp.value, "gm")
+                var regexp_end = new RegExp(ele_edit_regexp_end.value, "gm")
+
+
+                function replace_ruby(orig) {
+                    var pre = orig.replace(regexp_pre, "")
+                    var now = pre.replace(regexp, "<ruby>$1<rp>(</rp><rt>$2</rt><rp>)</rp></ruby>")
+                    var end = now.replace(regexp_end, "")
+                    return end
+                }
+
+                var input_jp = ele_input_jp.value
+                var input_cn = ele_input_cn.value
+                var is_add_cn = ele_check_add_cn.checked && input_cn.length > 0
+
+                var array_jp = Array.from(input_jp.split("\n"))
+                var array_cn = Array.from(input_cn.split("\n"))
+
+                var final = ""
+
+                array_jp.forEach((element, index) => {
+                    final += `<span class="jp">${replace_ruby(element)}</span>\n`
+                    if (is_add_cn && index < array_cn.length) {
+                        final += `<span class="cn">${array_cn[index]}</span>\n`
+                    }
+                })
+
+                ele_output.innerHTML = final
+            }
+
+        </script>
+
+        <script>
+            document.getElementById("input_jp").oninput = () => button_onclick()
+            document.getElementById("input_cn").oninput = () => button_onclick() 
+            document.getElementById("check_add_cn").oninput = () => button_onclick() 
+            document.getElementById("edit_regexp_pre").oninput = () => button_onclick()
+            document.getElementById("edit_regexp").oninput = () => button_onclick()
+            document.getElementById("edit_regexp_end").oninput = () => button_onclick()
+
+            document.getElementById("input_jp").innerHTML = ``
+
+            ele_select_regexp.onchange()
+            button_onclick()
+            
+        </script>
+
+    </main>
+    
+</body>
+</html> 

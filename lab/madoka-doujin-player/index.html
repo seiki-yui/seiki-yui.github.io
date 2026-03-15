@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-CN" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="color-scheme" content="light dark">
+
+    <title>Seiki Player</title>
+
+    <link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.red.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap">
+
+
+    <link rel="preload" href="https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-600px-png/[110424][Subroc Recordings] Black End Of Magical Girl.png" as="image" />
+    <link rel="preload" href="https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-600px-png/[110520][TAMUSIC] Puella Musica.png" as="image" />
+    <link rel="preload" href="https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-600px-png/[110702][Dandelion][U235核燃動力] 契約.png" as="image" />
+    <link rel="preload" href="https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-600px-png/[110710][Attrielectrock] MMM.png" as="image" />
+    <link rel="preload" href="https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-600px-png/[110710][梶迫小道具店] sǝʌol.png" as="image" />
+    <link rel="preload" href="https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-600px-png/[110813][Dolce Voce] もしも、もしもだよ、運命を変えられたら・・・？.png" as="image" />
+    <link rel="preload" href="https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-600px-png/[110813][MOB SQUAD BLACK LABEL] arma magica.png" as="image" />
+    <link rel="preload" href="https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-600px-png/[110813][UTANOHA] 魔法少女フォルトゥネ★マギカ.png" as="image" />
+    <link rel="preload" href="https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-600px-png/[110813][Visual Work Station] Agedum! Puella Magica!.png" as="image" />
+    <link rel="preload" href="https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-600px-png/[110918][子猫奪回屋] Law of cycles.png" as="image" />
+    <link rel="preload" href="https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-600px-png/[111016][TAMUSIC] まど☆マギ Classic.png" as="image" />
+    <link rel="preload" href="https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-600px-png/[111030][Clonesoldier's Factory] Milagro & Magia.png" as="image" />
+    <link rel="preload" href="https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-600px-png/[111030][Subroc Recordings] Steel And Broken Heart.png" as="image" />
+    <link rel="preload" href="https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-600px-png/[111030][朝挽歌] True Tears.png" as="image" />
+    <link rel="preload" href="https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-600px-png/[111230][TAMUSIC] まど☆マギ フィナーレ.png" as="image" />
+    <link rel="preload" href="https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-600px-png/[111231][Holzmond Records] Lux Aeterna～魔法少女たちに捧ぐ.png" as="image" />
+    <link rel="preload" href="https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-600px-png/[120811][植木屋] ホムラコンバット ブレイズ OST.png" as="image" />
+    <link rel="preload" href="https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-600px-png/[121229][Visual Work Station] 予定悲劇.png" as="image" />
+    <link rel="preload" href="https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-600px-png/[121230][k-waves LAB] エスノマギカ.png" as="image" />
+    <link rel="preload" href="https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-600px-png/[130429][NKRN] Soulgem Breaks.png" as="image" />
+    <link rel="preload" href="https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-600px-png/[130812][TOMATO GUMMY] Jazz Magica.png" as="image" />
+    <link rel="preload" href="https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-600px-png/[140815][Yoshida Cantabile] Flos Magicus.png" as="image" />
+    <link rel="preload" href="https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-600px-png/[141115][雪见温泉社] Glitter In The Air.png" as="image" />
+    <link rel="preload" href="https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-600px-png/[141230][Aina Quartet] madokawaii ユーフォニアム生演奏曲集.png" as="image" />
+    <link rel="preload" href="https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-600px-png/[151231][OVERSPHERE] Ult†mate.png" as="image" />
+    <link rel="preload" href="https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-600px-png/[161013][Emotional Waves] Puella dulcis fantasma.png" as="image" />
+    <link rel="preload" href="https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-600px-png/[200302][nocturnalplanet] Famidoka Magica.png" as="image" />
+    <!-- <script src="./jquery-3.7.1.js"></script> -->
+
+</head>
+<body>
+    <main>
+        <img id="cover" src="https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-600px-png/%5B111231%5D%5BHolzmond%20Records%5D%20Lux%20Aeterna%EF%BD%9E%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E3%81%9F%E3%81%A1%E3%81%AB%E6%8D%A7%E3%81%90.png" alt="">
+        <div id="info">
+            <div id="album">
+                <div id="name">
+                    <!-- Lux Aeterna～魔法少女たちに捧ぐ -->
+                </div>
+                <div id="albuminfo">
+                    <span id="artist">
+                        <!-- Dolce Voce -->
+                    </span>·
+                    <span id="date">
+                        <!-- 2011-12-31 -->
+                    </span>·
+                    <span id="length">
+                        <!-- 00:57:10 -->
+                    </span>
+                </div>
+            </div>
+            <div id="song">
+                
+            </div>
+        </div>
+    </main>
+    <style>
+        html,body {
+            margin: 0;
+        }
+        img#cover {
+            height: 600px;
+
+            position: absolute;
+            left: calc(225px + 300px);
+            top: 220px;
+
+            border-radius: 2px;
+            box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, .05);
+
+            transform: translate(-50%, 0);
+        }
+        #info {
+            width: 800px;
+            position: absolute;
+            left: 900px;
+            top: 200px;
+            line-height: 1.25;
+        }
+        #info #album #name {
+            font-size: 238%;
+            font-weight: 800;
+            /* margin-left: -10px; */
+        }
+        #info #album #albuminfo {
+            font-size: 100%;
+            font-weight: 600;
+            margin-top: 5px;
+            margin-left: -5px;
+            color: #676c75;
+        }
+        #info #album #albuminfo span {
+            margin-left: 5px;
+            margin-right: 5px;
+            
+        }
+    </style>
+    <style>
+        #song {
+            margin-top: 1.25rem;
+        }
+        #song .songitem {
+            height: 52px;
+            grid-template-columns: 1.25rem auto 3rem
+        }
+        #song:has(> .songitem:nth-child(11)) .songitem {
+            height: 44px;
+        }
+        #song:has(> .songitem:nth-child(14)) .songitem {
+            height: 40px;
+        }
+        #song:has(> .songitem:nth-child(17)) .songitem {
+            height: 36px;
+        }
+        #song .songitem .index {
+            color: #676c75;
+            font-weight: 600;
+
+        }
+        #song .songitem .length {
+            color: #676c75;
+            font-weight: 600;
+
+            text-align: right;
+        }
+    </style>
+    <style>
+        :root {
+            --pico-font-family: 'Lato', "Noto Sans Display", "Noto Sans JP", var(--pico-font-family-sans-serif);
+            font-family: var(--pico-font-family);
+            
+        }
+        #song,#name {
+            --pico-font-family: "Noto Sans Display", "Noto Sans JP", var(--pico-font-family-sans-serif);
+            font-family: var(--pico-font-family);
+            /* "Noto Sans SC",  */
+        }
+        
+        /* @media (min-width: 576px) { .container { max-width: 700px } }
+        @media (min-width: 1024px) { .container { max-width: 700px } }
+        @media (min-width: 1280px) { .container { max-width: 700px } }
+        @media (min-width: 1536px) { .container { max-width: 700px } } */
+    </style>
+
+    <script>
+
+        const query = (it) => document.querySelector(it)
+        const style = (it) => window.getComputedStyle(it) 
+
+        var url = 'http://127.0.0.1:5500/x-cdn/2024/madoka-magica-doujin-albums/2025-01-03_without_inst.json'
+        var url = 'https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/2025-01-03_without_inst.json'
+
+        let json = fetch(url).then(response => response.json()).then(data => {
+            console.log(data)
+
+        for (let i = 0; i < data.length; i++) {
+            setTimeout(() => {
+                hello(i)
+            },6000 * i)
+        }
+
+        function step() {
+            query("#info").style.left = query("#cover").offsetLeft + query("#cover").offsetWidth / 2 + 75 + "px"
+            window.requestAnimationFrame(step);
+        }
+        window.requestAnimationFrame(step);
+
+        // hello(5)
+
+        function hello (i) {
+            item = data[i]
+
+            let album = item.album
+            query("#name").innerText    = album.name
+            query("#artist").innerText  = album.artist
+            query("#date").innerText    = album.date
+            // query("#length").innerText  = album.length
+            query("#cover").src         = "https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-600px-png/" + album.cover + ".png"
+
+            var str = "";
+            var i = 0
+            var total_duration = 0
+            for (song of item.song) {
+                i += 1
+                // console.log(song.title,song.duration, song.orig_duration)
+                total_duration += song.orig_duration
+
+                str += 
+                    `<div class="songitem grid">
+                        <div class="index">
+                            ${i}
+                        </div>
+                        <div class="name">
+                            ${song.title}
+                        </div>
+                        <div class="length">
+                            ${song.duration}
+                        </div>
+                    </div>`
+            }
+            query("#song").innerHTML = str;
+
+                
+            
+            total_duration = Math.round(total_duration)
+
+            var min = Math.floor(total_duration / 60)
+                min = min.toString().padStart(2, "0")
+            var second = total_duration % 60
+                second = second.toString().padStart(2, "0")
+
+            query("#length").innerHTML = `${min}:${second}`
+
+            // console.log("https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-600px-png/" + album.cover + ".png")
+        
+        }
+
+            // for (item of data) {
+            // // if (true) {
+            //     // item = data[21]
+
+                
+            // }
+            // // 
+        })
+                
+    </script>
+    <!-- ### もしも、もしもだよ、運命を変えられたら・・・？
+    <div class="tag-plugin image"><div class="image-bg"><img no-lazy src="https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-500px/[110813][Dolce Voce] もしも、もしもだよ、運命を変えられたら・・・？.jpg" data-fancybox="true"/></div></div>
+    {% aplayerlist %}{"preload": "metadata","music": [
+    {"author": "Dolce Voce","pic": "https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-500px/[110813][Dolce Voce] もしも、もしもだよ、運命を変えられたら・・・？.jpg","title": "「秘めた想い」～ほむら","url": "https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/aac-96kbps/[110813][Dolce Voce] もしも、もしもだよ、運命を変えられたら・・・？/01. 「秘めた想い」～ほむら.m4a"},
+    {"author": "Dolce Voce","pic": "https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-500px/[110813][Dolce Voce] もしも、もしもだよ、運命を変えられたら・・・？.jpg","title": "「この願い、永遠に」～まどか","url": "https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/aac-96kbps/[110813][Dolce Voce] もしも、もしもだよ、運命を変えられたら・・・？/02. 「この願い、永遠に」～まどか.m4a"},
+    {"author": "Dolce Voce","pic": "https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-500px/[110813][Dolce Voce] もしも、もしもだよ、運命を変えられたら・・・？.jpg","title": "「Still Alive」～杏子","url": "https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/aac-96kbps/[110813][Dolce Voce] もしも、もしもだよ、運命を変えられたら・・・？/03. 「Still Alive」～杏子.m4a"},
+    {"author": "Dolce Voce","pic": "https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-500px/[110813][Dolce Voce] もしも、もしもだよ、運命を変えられたら・・・？.jpg","title": "「終わらない夢」～さやか","url": "https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/aac-96kbps/[110813][Dolce Voce] もしも、もしもだよ、運命を変えられたら・・・？/04. 「終わらない夢」～さやか.m4a"},
+    {"author": "Dolce Voce","pic": "https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/covers-500px/[110813][Dolce Voce] もしも、もしもだよ、運命を変えられたら・・・？.jpg","title": "「夜が明けない日」～マミ","url": "https://gcore.jsdelivr.net/gh/seiki-yui/x-cdn/2024/madoka-magica-doujin-albums/aac-96kbps/[110813][Dolce Voce] もしも、もしもだよ、運命を変えられたら・・・？/05. 「夜が明けない日」～マミ.m4a"},
+    ]}{% endaplayerlist %} -->
+    
+</body>
+</html>

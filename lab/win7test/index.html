@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="7.css">
+
+    <script src="./interact.js"></script>
+
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.38/browser-polyfill.min.js"></script> -->
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/6.1.19/browser.min.js"></script> -->
+
+    <!-- <script src="https://gcore.jsdelivr.net/npm/interactjs@1.10.27/dist/interact.min.js"></script> -->
+
+</head>
+<body>
+    <style>
+        html, body {
+          min-height: 100vh;
+          margin: 0;
+        }
+
+        body{
+          background-image: url(./windows-7-official-1920x1080-13944.jpg);
+          background-image: url(./Snipaste_2024-11-24_12-58-42.png);
+          /* background-position: center; */
+          background-repeat: no-repeat;
+        }
+
+        * {
+          box-sizing: border-box
+        }
+
+        /* 窗口绝对定位 */
+        .window {
+          position: absolute;
+          /* position: fixed; */
+        }
+
+        /* 窗口溢出不显示 */
+        .window, .window .window-body {
+          overflow: hidden
+        }
+        
+        /* 计算窗口大小 */
+        .window-body.has-space {
+          height: calc(100% - 34px);
+          /* height: calc(100%); */
+        }
+        .window:has(.status-bar) .window-body.has-space {
+          height: calc(100% - 34px - 21px);
+        }
+
+        /* 禁用用户选择 */
+        .inhibit-selection {
+          user-select: none;
+          touch-action: none;
+        }
+/* 
+        .title-bar-text, .status-bar, button, [role=menubar] * {
+          user-select: none;
+        } */
+
+
+        /* 适配窗口菜单栏 */
+        .window-body.has-space.has-menu [role="menubar"] {
+            margin-top: calc(var(--window-spacing) * -1);
+            margin-left: calc(var(--window-spacing) * -1);
+            margin-right: calc(var(--window-spacing) * -1);
+            margin-bottom: var(--window-spacing);   
+        }
+        ul[role=menubar]>[role=menuitem] {
+            padding: 1px 6px 2px 6px;
+        }
+        /* 对于旧版本，需要设置菜单的颜色 */
+        ul[role=menu]>[role=menuitem]>a {
+          color: black;
+        }
+
+
+        /* 标题栏 禁止换行、溢出为省略号等等 */
+        .title-bar-text {
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          padding: calc(var(--window-spacing) + 10px) 10px 10px 10px;
+          margin: -9px -10px -10px -10px;
+          font-size: 9pt;
+          font-family: "微软雅黑";
+          text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff;
+        }
+
+        /* 状态栏 禁止换行、溢出为省略号等等 */
+        .status-bar {
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+
+        /* 标题栏控制按钮 暂时禁用动画1毫秒 .title-bar-no-transition */
+        .title-bar-controls.title-bar-no-transition button:before {
+          transition: none !important;
+        }
+    </style>
+    <style>
+      .window.glass:not(.active) {
+        box-shadow: 0px 0px 7px 0px var(--window-border-color), inset 0 0 0 1px #fffa;
+        --window-background-color: rgba(69, 128, 196, .3);
+      }
+      .window.glass:not(.active):before {
+        background: none
+      }
+      .window.glass.active {
+        --window-background-color: #4580c4;
+        box-shadow: 2px 2px 12px 2px black, inset 0 0 0 1px #fffa;
+      }
+      .window.glass.active .title-bar-controls {
+        background: none;
+      }
+      .window.glass:not(.active)  .title-bar-controls { 
+        box-shadow: 0 1px 0 #fff9, 1px 0 0 #fff9, -1px 0 0 #fff9;
+      }
+      .window.glass:not(.active)>.title-bar {
+        background: none;
+        box-shadow: none;
+        background: #fff1;
+      }
+    </style>
+    <!-- <div class="window resizable draggable" data-x=180 data-y=40 data-size="330,auto">
+        <div class="title-bar">
+          <div class="title-bar-text">A Window With A Status Bar</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body has-space">
+          <p> There are just so many possibilities:</p>
+          <ul>
+            <li>A Task Manager</li>
+            <li>A Notepad</li>
+            <li>Or even a File Explorer!</li>
+          </ul>
+        </div>
+        <div class="status-bar">
+          <p class="status-bar-field">Press F1 for help</p>
+          <p class="status-bar-field">Slide 1</p>
+          <p class="status-bar-field">CPU Usage: 14%</p>
+        </div>
+    </div>
+    <div class="window resizable draggable" data-x=280 data-y=300 data-size="330,auto">
+      <div class="title-bar">
+        <div class="title-bar-text">A Window With A Status Bar</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="window-body has-space">
+        <p> There are just so many possibilities:</p>
+        <ul>
+          <li>A Task Manager</li>
+          <li>A Notepad</li>
+          <li>Or even a File Explorer!</li>
+        </ul>
+      </div>
+      <div class="status-bar">
+        <p class="status-bar-field">Press F1 for help</p>
+        <p class="status-bar-field">Slide 1</p>
+        <p class="status-bar-field">CPU Usage: 14%</p>
+      </div>
+    </div>
+    <div class="window resizable draggable" data-x=180 data-y=600 data-size="330,auto">
+      <div class="title-bar">
+        <div class="title-bar-text">A Window With A Status Bar</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="window-body has-space">
+        <p> There are just so many possibilities:</p>
+        <ul>
+          <li>A Task Manager</li>
+          <li>A Notepad</li>
+          <li>Or even a File Explorer!</li>
+        </ul>
+      </div>
+      <div class="status-bar">
+        <p class="status-bar-field">Press F1 for help</p>
+        <p class="status-bar-field">Slide 1</p>
+        <p class="status-bar-field">CPU Usage: 14%</p>
+      </div>
+    </div> -->
+    <div class="window resizable draggable" data-x=100 data-y=350 data-size="330,auto" data-minsize="auto">
+      <div class="title-bar">
+        <div class="title-bar-text">A Window With A Status Bar</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="window-body has-space">
+        <p> There are just so many possibilities:</p>
+        <ul>
+          <li>A Task Manager</li>
+          <li>A Notepad</li>
+          <li>Or even a File Explorer!</li>
+        </ul>
+      </div>
+      <div class="status-bar">
+        <p class="status-bar-field">Press F1 for help</p>
+        <p class="status-bar-field">Slide 1</p>
+        <p class="status-bar-field">CPU Usage: 14%</p>
+      </div>
+    </div>
+
+    <div class="window resizable draggable active" data-x=790 data-y=790 data-size="400,auto" data-minsize="0,auto" data-maxsize="900,600">
+      <div class="title-bar">
+        <div class="title-bar-text">Another window with contents</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
+        </div>
+      </div>   
+      
+      <div class="window-body has-space has-menu">
+        <ul role="menubar" class="can-hover">
+          <li role="menuitem" tabindex="0" aria-haspopup="true">
+            File
+            <ul role="menu">
+              <li role="menuitem">
+                <a href="#menubar">
+                  Open <span>Ctrl+O</span>
+                </a>
+              </li>
+              <li role="menuitem">
+                <a href="#menubar">
+                  Save <span>Ctrl+S</span>
+                </a>
+              </li>
+              <li role="menuitem" class="has-divider">
+                <a href="#menubar">
+                  Save As... <span>Ctrl+Shift+S</span>
+                </a>
+              </li>
+              <li role="menuitem"><a href="#menubar">Exit</a></li>
+            </ul>
+          </li>
+          <li role="menuitem" tabindex="0" aria-haspopup="true">
+            Edit
+            <ul role="menu">
+              <li role="menuitem"><a href="#menubar">Undo</a></li>
+              <li role="menuitem"><a href="#menubar">Copy</a></li>
+              <li role="menuitem"><a href="#menubar">Cut</a></li>
+              <li role="menuitem" class="has-divider"><a href="#menubar">Paste</a></li>
+              <li role="menuitem"><a href="#menubar">Delete</a></li>
+              <li role="menuitem"><a href="#menubar">Find...</a></li>
+              <li role="menuitem"><a href="#menubar">Replace...</a></li>
+              <li role="menuitem"><a href="#menubar">Go to...</a></li>
+            </ul>
+          </li>
+          <li role="menuitem" tabindex="0" aria-haspopup="true">
+            View
+            <ul role="menu">
+              <li role="menuitem" tabindex="0" aria-haspopup="true">
+                Zoom
+                <ul role="menu">
+                  <li role="menuitem"><button>Zoom In</button></li>
+                  <li role="menuitem"><button>Zoom Out</button></li>
+                </ul>
+              </li>
+              <li role="menuitem"><a href="#menubar">Status Bar</a></li>
+            </ul>
+          </li>
+          <li role="menuitem" tabindex="0" aria-haspopup="true">
+            Help
+            <ul role="menu">
+              <li role="menuitem"><a href="#menubar">View Help</a></li>
+              <li role="menuitem"><a href="#menubar">About</a></li>
+            </ul>
+          </li>
+        </ul>
+        
+        <section class="tabs" style="max-width: 500px">
+          <menu role="tablist" aria-label="Sample Tabs">
+            <button role="tab" aria-controls="tab-A" aria-selected="true">Instruction</button>
+            <button role="tab" aria-controls="tab-B">Example</button>
+            <button role="tab" aria-controls="tab-C">More instruction</button>
+            <button role="tab" aria-controls="tab-D" disabled="">Disabled Tab</button>
+          </menu>
+          <!-- the tab content -->
+          <article role="tabpanel" id="tab-A">
+            <p>
+              To create a tab, use a <code>menu</code> element with <code>role="tablist"</code>.
+              Then for the tab titles, use a <code>button</code> with <code>role="tab"</code>, and set the <code>aria-controls</code> attribute to
+              the corresponding id of the element with <code>role="tabpanel"</code>.
+            </p>
+            <p>
+              Read more at <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Tab_Role" target="_blank" one-link-mark="yes">MDN Web docs - ARIA: tab role</a>
+            </p>
+          </article>
+          <article role="tabpanel" id="tab-B" hidden="">
+            <h3>More...</h3>
+          </article>
+          <article role="tabpanel" id="tab-C" hidden="">
+            <h3>Disabling tabs</h3>
+          </article>
+          <article role="tabpanel" id="tab-D" hidden="">
+            <h3>Disabled Tab</h3>
+            <p>This tab is disabled, so you should not be able to read this.</p>
+          </article>
+        </section>
+
+        <section class="field-row" style="justify-content: flex-end">
+          <button class="default">OK</button>
+          <button>Cancel</button>
+        </section>
+      </div>
+    </div>
+
+    <script>
+      // interact('.resizable').resizable({
+        
+
+      // })
+
+    </script>
+    <script>
+      // 窗口 z-index 计数器
+      let zIndexFront = 0;
+
+      // 每当窗口被点击时调用 设置为激活窗口
+      var setActive = (ele) => {
+        // 全部窗口设置为非激活 并激活选中的窗口
+        document.querySelectorAll(".window").forEach((it) => {
+          it.classList.remove("active")
+        })
+        ele.classList.add("active")
+
+        // z序+1 窗口移到最前端
+        zIndexFront += 1;
+        ele.style.zIndex = zIndexFront
+
+        // 用0毫秒的计时器，禁用窗口被激活时标题栏按钮的动画
+        var eleControls = ele.querySelector(".title-bar-controls");
+        eleControls.classList.add("title-bar-no-transition")
+        setTimeout((it2) => { 
+          it2.classList.remove("title-bar-no-transition") 
+        }, 0, eleControls);
+
+      }
+
+      // 初始化每个窗口
+      document.querySelectorAll(".window").forEach((it) => {
+        it.onmousedown = () => { setActive(it) }
+
+        // 初始化 CSS
+        it.style.transform = `translate(${it.dataset.x}px, ${it.dataset.y}px)`
+        if ("size" in it.dataset) {
+          let [w, h] = it.dataset.size.split(",").map((v) => {
+            if (parseInt(v).toString() == v) {
+              return `${v}px`;
+            } else {
+              return v
+            }
+          })
+          it.style.width = w
+          it.style.height = h
+        }
+
+        let [minW, minH, maxW, maxH] = [140, 57, Infinity, Infinity]
+
+        // 初始化窗口大小
+        // 当 data-minsize 为 auto 时，窗口默认auto大小为最小
+        // 当 data-maxsize 为 auto 时，不限制
+        if ("minsize" in it.dataset) {
+
+          if (it.dataset.minsize == "auto") {
+            [minW, minH] = [it.offsetWidth,it.offsetHeight]
+          } else {
+            [minW, minH] = it.dataset.minsize.split(",")
+          }
+
+          if (minW == "auto") minW = it.offsetWidth
+          if (minH == "auto") minH = it.offsetHeight
+
+          minW = parseInt(minW) || 0
+          minH = parseInt(minH) || 0
+        }
+        if ("maxsize" in it.dataset) {
+          [maxW, maxH] = it.dataset.maxsize.split(",")
+            .map(it2 => (it2 === "auto")? Infinity: it2)
+            .map(Number)
+            .map(it2 => it2 || Infinity)
+            .map(it2 => (it2 > 0)? it2: Infinity)
+
+        }
+
+        [minW, minH] = [Math.max(minW, 140), Math.max(minH, 57)]
+        if (it.querySelector(".status-bar")) {
+          minH = Math.max(minH, 70)
+        }
+        it.dataset.minsize = `${minW},${minH}`
+        // it.dataset.maxsize = `${maxW},${maxH}`
+        
+
+        let interactable = interact(it)
+          .resizable({
+            edges: { top: true, left: true, bottom: true, right: true },
+            listeners: {
+              start (event) {
+                document.querySelector("body").classList.add("inhibit-selection")
+
+              },
+              move: function (event) {
+                let dataset = event.target.dataset;
+                
+                let { x, y } = dataset
+
+                x = (parseFloat(x) || 0) + event.deltaRect.left
+                y = (parseFloat(y) || 0) + event.deltaRect.top
+
+                let [w, h] = [event.rect.width, event.rect.height]
+
+                Object.assign(event.target.style, {
+                  width: `${w}px`, height: `${h}px`,
+                  transform: `translate(${x}px, ${y}px)`
+                })
+                Object.assign(event.target.dataset, { x, y })
+              },
+              end (event) {
+                document.querySelector("body").classList.remove("inhibit-selection")
+              },
+            },
+            modifiers: [
+              interact.modifiers.restrictSize({
+                min: { width: minW, height: minH },
+                max: { width: maxW, height: maxH }
+              })
+            ],
+            margin: 8,
+          })
+          .draggable({
+            listeners: {
+              start (event) {
+                event.target.onmousedown()
+                document.querySelector("body").classList.add("inhibit-selection")
+              },
+              move (event) {
+                let { x, y } = event.target.dataset
+
+                x = (parseFloat(x) || 0) + event.dx
+                y = (parseFloat(y) || 0) + event.dy
+                
+                event.target.style.transform = `translate(${x}px, ${y}px)`
+                Object.assign(event.target.dataset, { x, y })
+              },
+              end (event) {
+                document.querySelector("body").classList.remove("inhibit-selection")
+              }
+            },
+            modifiers: [
+              interact.modifiers.restrictRect({
+                restriction: 'parent'
+              })
+            ],
+            allowFrom: '.title-bar',
+            cursorChecker () {
+              // don't set a cursor for drag actions
+              return null
+            },
+            // options: {
+              
+            // }
+          })
+        
+        // 注入以关闭 touch-action 的 warning
+        Object.assign(interactable.options, { 
+          devTools: {
+              ignore: {
+                touchAction: true 
+              }
+            } 
+          }
+        )
+
+        
+    })
+
+    </script>
+    <script>
+      // 调试代码
+      document.querySelectorAll(".window").forEach((it) => {
+        it.classList.add("glass")
+      })
+    </script>
+
+<!-- <section class="tabs">
+  <menu role="tablist" aria-label="Tabs Template">
+    <button role="tab" aria-controls="tab-A" aria-selected="true">Tab A</button>
+    <button role="tab" aria-controls="tab-B" aria-selected="false">Tab B</button>
+    <button role="tab" aria-controls="tab-C" aria-selected="false">Tab C</button>
+    <button role="tab" aria-controls="tab-D" disabled="" aria-selected="false">Tab D</button>
+  </menu>
+  <article role="tabpanel" id="tab-A">Tab A is active</article>
+  <article role="tabpanel" id="tab-B" hidden="true">Tab B is active</article>
+  <article role="tabpanel" id="tab-C" hidden="true">Tab C is active</article>
+  <article role="tabpanel" id="tab-D" hidden="true">Tab D is inactive</article>
+</section> -->
+</body>
+</html>
